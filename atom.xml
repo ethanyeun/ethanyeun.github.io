@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>ethanblog</title>
+  
+  <subtitle>Go Fuck YourSelf</subtitle>
+  <link href="http://ethanyeun.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://ethanyeun.github.io/"/>
+  <updated>2024-07-22T05:42:42.799Z</updated>
+  <id>http://ethanyeun.github.io/</id>
+  
+  <author>
+    <name>ethan</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://ethanyeun.github.io/2024/07/22/babay/"/>
+    <id>http://ethanyeun.github.io/2024/07/22/babay/</id>
+    <published>2024-07-22T05:42:24.278Z</published>
+    <updated>2024-07-22T05:42:42.799Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;你好baby&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
