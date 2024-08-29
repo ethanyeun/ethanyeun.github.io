@@ -6,7 +6,7 @@
   <link href="http://ethanyeun.github.io/atom.xml" rel="self"/>
   
   <link href="http://ethanyeun.github.io/"/>
-  <updated>2024-08-29T08:57:58.344Z</updated>
+  <updated>2024-08-29T10:39:04.208Z</updated>
   <id>http://ethanyeun.github.io/</id>
   
   <author>
@@ -17,15 +17,31 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>初始化容器</title>
+    <title>k8s补全</title>
+    <link href="http://ethanyeun.github.io/2024/08/29/bash-completion/"/>
+    <id>http://ethanyeun.github.io/2024/08/29/bash-completion/</id>
+    <published>2024-08-29T02:52:30.000Z</published>
+    <updated>2024-08-29T10:39:04.208Z</updated>
+    
+    
+    <summary type="html">&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;dnf -y install bash-completion&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;source /usr/share/bash-completion/bash_completion&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;source &amp;lt;(kubectl completion bash)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;echo &amp;quot;source &amp;lt;(kubectl completion bash)&amp;quot; &amp;gt;&amp;gt; ~/.bashrc`&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    
+    <category term="kubernetes" scheme="http://ethanyeun.github.io/tags/kubernetes/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>initcontainerds（初始化容器）</title>
     <link href="http://ethanyeun.github.io/2024/08/29/initcontainers/"/>
     <id>http://ethanyeun.github.io/2024/08/29/initcontainers/</id>
     <published>2024-08-29T02:52:30.000Z</published>
-    <updated>2024-08-29T08:57:58.344Z</updated>
+    <updated>2024-08-29T10:36:00.292Z</updated>
     
     
-    <summary type="html">&lt;h1 id=&quot;initcontainerds&quot;&gt;&lt;a href=&quot;#initcontainerds&quot; class=&quot;headerlink&quot; title=&quot;initcontainerds&quot;&gt;&lt;/a&gt;initcontainerds&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://kubernetes.io/zh-cn/docs/tasks/configure-pod-container/configure-pod-initialization/&quot;&gt;配置 Pod 初始化 | Kubernetes&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
+    <summary type="html">&lt;blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;在pod中可以有一个或者多个初始化容器&lt;/li&gt;
 &lt;li&gt;初始化容器执行成功后，应用的容器才能被执行&lt;/li&gt;
