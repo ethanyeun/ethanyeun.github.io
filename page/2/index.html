@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+ 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"ethanyeun.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+  <script src=""></script>
+  <link href="" rel="stylesheet">
+  <script>
+    (function () {
+        if ('') {
+            if (prompt('请输入文章密码') !== '') {
+                alert('密码错误！');
+                if (history.length === 1) {
+                    location.replace("https://ethanyeun.github.io/"); // 这里替换成你的首页
+                } else {
+                    history.back();
+                }
+            }
+        }
+    })();
+</script>
+
+    <meta name="description" content="用自己最爱的方式度过这一生">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ethanblog">
+<meta property="og:url" content="http://ethanyeun.github.io/page/2/index.html">
+<meta property="og:site_name" content="ethanblog">
+<meta property="og:description" content="用自己最爱的方式度过这一生">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="ethan">
+<meta property="article:tag" content="GO &amp; DevOps">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://ethanyeun.github.io/page/2/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"page/2/index.html","title":""}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>ethanblog</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="ethanblog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">ethanblog</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Go Fuck YourSelf</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="ethan"
+      src="/images/ava.png">
+  <p class="site-author-name" itemprop="name">ethan</p>
+  <div class="site-description" itemprop="description">用自己最爱的方式度过这一生</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:yourname@gmail.com" title="E-Mail → mailto:yourname@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://youtube.com/" title="YouTube → https:&#x2F;&#x2F;youtube.com&#x2F;" rel="noopener me" target="_blank"><i class="fab fa-youtube fa-fw"></i>YouTube</a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="sidebar-inner sidebar-blogroll">
+      <div class="links-of-blogroll animated">
+        <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+          链接
+        </div>
+        <ul class="links-of-blogroll-list">
+            <li class="links-of-blogroll-item">
+              <a href="https://ethanyeun.github.io/" title="https:&#x2F;&#x2F;ethanyeun.github.io&#x2F;">blog</a>
+            </li>
+            <li class="links-of-blogroll-item">
+              <a href="https://fontawesome.dashgame.com/" title="https:&#x2F;&#x2F;fontawesome.dashgame.com&#x2F;" rel="noopener" target="_blank">tubiao</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://ethanyeun.github.io/2024/08/13/docker%E9%95%9C%E5%83%8F%E5%AF%BC%E5%85%A5k8s/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/ava.png">
+      <meta itemprop="name" content="ethan">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ethanblog">
+      <meta itemprop="description" content="用自己最爱的方式度过这一生">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | ethanblog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/08/13/docker%E9%95%9C%E5%83%8F%E5%AF%BC%E5%85%A5k8s/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-08-13 22:46:16" itemprop="dateCreated datePublished" datetime="2024-08-13T22:46:16+08:00">2024-08-13</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-08-28 20:14:58" itemprop="dateModified" datetime="2024-08-28T20:14:58+08:00">2024-08-28</time>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>1.7k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>3 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>docker镜像导入k8s</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">#设置docker镜像加速地址</span><br><span class="line">cat /etc/docker/daemon.json</span><br><span class="line">&#123;</span><br><span class="line">  &quot;registry-mirrors&quot;: [&quot;https://docker.rainbond.cc/&quot;,&quot;https://docker.m.daocloud.io&quot;,&quot;https://noohub.ru&quot;,&quot;https://huecker.io&quot;,&quot;https://dockerhub.timeweb.cloud&quot;]</span><br><span class="line">&#125;</span><br><span class="line">#重启后拉去镜像</span><br><span class="line">docker pull nginx</span><br><span class="line">Using default tag: latest</span><br><span class="line"> latest: Pulling from library/nginx</span><br><span class="line">e4fff0779e6d: Pull complete</span><br><span class="line">9c4e4e507b08: Pull complete</span><br><span class="line">85664e7b25d6: Pull complete</span><br><span class="line">e9d00ba15cc0: Pull complete</span><br><span class="line">ca3474dd2ca6: Pull complete</span><br><span class="line">472851929ad7: Pull complete</span><br><span class="line">ed60582f2661: Pull complete</span><br><span class="line">Digest: sha256:93db6ea665b5485e59f0b35e506456b5055925d43011bdcc459d556332d231a2</span><br><span class="line">Status: Downloaded newer image for nginx:latest</span><br><span class="line">docker.io/library/nginx:latest</span><br><span class="line">#查看镜像</span><br><span class="line">[root@master01 ~]# docker images</span><br><span class="line">REPOSITORY   TAG       IMAGE ID       CREATED       SIZE</span><br><span class="line">nginx        latest    900dca2a61f5   7 weeks ago   188MB</span><br><span class="line">#保存镜像</span><br><span class="line">[root@master01 ~]# docker save -o nginx.tar.gz nginx:latest</span><br><span class="line">#查看镜像成功</span><br><span class="line">[root@master01 ~]# ls</span><br><span class="line">anaconda-ks.cfg  nginx.tar.gz</span><br><span class="line"></span><br><span class="line">#ctr加入域名导入镜像</span><br><span class="line">[root@master01 ~]# ctr -n k8s.io image import nginx.tar.gz</span><br><span class="line">unpacking docker.io/library/nginx:latest (sha256:7183446dbb193731a504732a9399947a37f54477a61efff97113ebd23f31ad00)...done</span><br><span class="line">#删除镜像</span><br><span class="line">[root@master01 ~]# crictl rmi docker.io/library/nginx</span><br><span class="line">Deleted: docker.io/library/nginx:latest</span><br><span class="line">#导入镜像</span><br><span class="line">[root@master01 ~]# ctr -n k8s.io image import nginx.tar.gz</span><br><span class="line">unpacking docker.io/library/nginx:latest (sha256:7183446dbb193731a504732a9399947a37f54477a61efff97113ebd23f31ad00)...done</span><br><span class="line">#查看镜像</span><br><span class="line">[root@master01 ~]# crictl images</span><br><span class="line">IMAGE                                                             TAG                 IMAGE ID            SIZE</span><br><span class="line">docker.io/library/nginx                                           latest              900dca2a61f57       192MB</span><br><span class="line">registry.aliyuncs.com/google_containers/nginx                     latest              </span><br></pre></td></tr></table></figure>
+
+<p><code>也可以在/etc/containerd/cer.d/下面添加docker，aliyun，tengxun各种镜像加速，他就能自动识别各种镜像</code>也可以使用手动的方法导入镜像</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://ethanyeun.github.io/2024/08/13/k8s/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/ava.png">
+      <meta itemprop="name" content="ethan">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ethanblog">
+      <meta itemprop="description" content="用自己最爱的方式度过这一生">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | ethanblog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/08/13/k8s/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2024-08-13 18:28:23 / 修改时间：22:46:36" itemprop="dateCreated datePublished" datetime="2024-08-13T18:28:23+08:00">2024-08-13</time>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>3.2k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>6 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="k8s1-30安装"><a href="#k8s1-30安装" class="headerlink" title="k8s1.30安装"></a>k8s1.30安装</h1><h2 id="1-环境配置（所有）"><a href="#1-环境配置（所有）" class="headerlink" title="1.环境配置（所有）"></a>1.环境配置（所有）</h2><h1 id="行号"><a href="#行号" class="headerlink" title="行号"></a>行号</h1><p>echo “set nu” &gt;&gt; &#x2F;root&#x2F;.vimrc</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">关闭防火墙</span></span><br><span class="line">systemctl disable --now firewalld</span><br><span class="line">iptables -F &amp;&amp; iptables -t nat -F &amp;&amp; iptables -t mangle -F &amp;&amp; iptables -X &amp;&amp; iptables -P FORWARD ACCEPT</span><br><span class="line">systemctl status firewalld</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">关闭selinux</span></span><br><span class="line">sed -i &#x27;/^SELINUX=/cSELINUX=disabled&#x27; /etc/selinux/config</span><br><span class="line">setenforce 0</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">关闭swap分区  备份此文件</span></span><br><span class="line">swapoff -a</span><br><span class="line">sed -i.bak &#x27;/swap/s/^/#/&#x27; /etc/fstab</span><br><span class="line">free -h</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">配置阿里云网络源</span></span><br><span class="line">sed -e &#x27;s|^mirrorlist=|#mirrorlist=|g&#x27; \</span><br><span class="line">    -e &#x27;s|^#baseurl=http://dl.rockylinux.org/$contentdir|baseurl=https://mirrors.aliyun.com/rockylinux|g&#x27; \</span><br><span class="line">    -i.bak \</span><br><span class="line">    /etc/yum.repos.d/Rocky-*.repo</span><br><span class="line"></span><br><span class="line">dnf makecache</span><br><span class="line">yum -y install epel-release</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">启用 IPv4 数据包转发</span></span><br><span class="line">cat &lt;&lt;EOF | sudo tee /etc/modules-load.d/k8s.conf</span><br><span class="line">overlay</span><br><span class="line">br_netfilter</span><br><span class="line">EOF</span><br><span class="line"></span><br><span class="line">sudo modprobe overlay</span><br><span class="line">sudo modprobe br_netfilter</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">设置所需的 sysctl 参数，参数在重新启动后保持不变</span></span><br><span class="line">cat &lt;&lt;EOF | sudo tee /etc/sysctl.d/k8s.conf</span><br><span class="line">net.bridge.bridge-nf-call-iptables  = 1</span><br><span class="line">net.bridge.bridge-nf-call-ip6tables = 1</span><br><span class="line">net.ipv4.ip_forward                 = 1</span><br><span class="line">EOF</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">应用 sysctl 参数而不重新启动</span></span><br><span class="line">sudo sysctl --system</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">查看是否生效</span></span><br><span class="line">lsmod | grep br_netfilter</span><br><span class="line">lsmod | grep overlay</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">时间服务</span></span><br><span class="line">dnf -y install chrony</span><br><span class="line">systemctl enable --now chronyd</span><br><span class="line">timedatectl </span><br><span class="line">date</span><br><span class="line">chronyc sources</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">continaerd</span></span><br><span class="line">wget -O /etc/yum.repos.d/docker-ce.repo https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo</span><br><span class="line">dnf install -y containerd </span><br><span class="line">ctr --version</span><br><span class="line">ctr containerd.io 1.7.19</span><br><span class="line">mkdir -p /etc/containerd</span><br><span class="line">containerd config default &gt; /etc/containerd/config.toml</span><br><span class="line">sed -i &#x27;s/registry.k8s.io/registry.aliyuncs.com\/google_containers/&#x27; /etc/containerd/config.toml</span><br><span class="line">SystemdCgroup = true</span><br><span class="line">systemctl enable --now containerd</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">cat &lt;&lt;EOF | tee /etc/yum.repos.d/kubernetes.repo</span><br><span class="line">[kubernetes]</span><br><span class="line">name=Kubernetes</span><br><span class="line">baseurl=https://mirrors.aliyun.com/kubernetes-new/core/stable/v1.30/rpm/</span><br><span class="line">enabled=1</span><br><span class="line">gpgcheck=1</span><br><span class="line">gpgkey=https://mirrors.aliyun.com/kubernetes-new/core/stable/v1.30/rpm/repodata/repomd.xml.key</span><br><span class="line">EOF</span><br><span class="line"></span><br><span class="line">dnf install -y kubelet kubeadm kubectl</span><br><span class="line">systemctl enable --now kubelet</span><br><span class="line">kubelet --version</span><br><span class="line">Kubernetes v1.30.3</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">拉去需要的镜像</span></span><br><span class="line">kubeadm config images pull --image-repository registry.aliyuncs.com/google_containers</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">指定容器运行时为containerd</span></span><br><span class="line">crictl config runtime-endpoint /run/containerd/containerd.sock</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">kubectl命令补全</span></span><br><span class="line">kubectl completion bash &gt;/etc/bash_completion.d/kubectl</span><br><span class="line">kubeadm completion bash &gt;/etc/bash_completion.d/kubeadm</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">初始化文件</span></span><br><span class="line">kubeadm config print init-defaults &gt; /etc/kubernetes/init-default.yaml</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">更改容器的镜像地址</span></span><br><span class="line">sed -i &#x27;s/registry.k8s.io/registry.aliyuncs.com\/google_containers/&#x27; /etc/kubernetes/init-default.yaml</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">更改容器地址</span></span><br><span class="line">find / -name &quot;containerd.sock&quot;</span><br><span class="line">/run/containerd/containerd.sock</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">更改masterip</span></span><br><span class="line">sed -i &#x27;s/1.2.3.4/10.10.10.10/&#x27; /etc/kubernetes/init-default.yaml</span><br><span class="line">kubeadm init --pod-network-cidr=10.244.0.0/16 --apiserver-advertise-address 172.29.1.101 --image-repository registry.aliyuncs.com/google_containers</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">初始化</span></span><br><span class="line">kubeadm init --config=kubeadm-init.yaml | tee kubeadm-init.log</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">wget https://docs.projectcalico.org/manifests/calico.yaml</span><br><span class="line">- name: CALICO_IPV4POOL_CIDR</span><br><span class="line">  value: &quot;10.244.0.0/16&quot;</span><br><span class="line">- name: IP_AUTODETECTION_METHOD</span><br><span class="line">  value: &quot;interface=ens33,ens160&quot;</span><br><span class="line">kubectl apply -f calico.yaml</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>镜像加速配置无需重启服务，即可生效</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#设置crictl</span><br><span class="line">cat &lt;&lt; EOF &gt;&gt; /etc/crictl.yaml</span><br><span class="line">runtime-endpoint: unix:///var/run/containerd/containerd.sock</span><br><span class="line">image-endpoint: unix:///var/run/containerd/containerd.sock</span><br><span class="line">timeout: 10</span><br><span class="line">debug: false</span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://ethanyeun.github.io/2024/08/12/k8s.1.30.3%E5%AE%89%E8%A3%85%E8%AF%A6%E7%BB%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/ava.png">
+      <meta itemprop="name" content="ethan">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ethanblog">
+      <meta itemprop="description" content="用自己最爱的方式度过这一生">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | ethanblog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/08/12/k8s.1.30.3%E5%AE%89%E8%A3%85%E8%AF%A6%E7%BB%86/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2024-08-12 16:09:54 / 修改时间：23:54:19" itemprop="dateCreated datePublished" datetime="2024-08-12T16:09:54+08:00">2024-08-12</time>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>3.2k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>6 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="k8s1-30安装"><a href="#k8s1-30安装" class="headerlink" title="k8s1.30安装"></a>k8s1.30安装</h1><h2 id="1-环境配置（所有）"><a href="#1-环境配置（所有）" class="headerlink" title="1.环境配置（所有）"></a>1.环境配置（所有）</h2><h1 id="行号"><a href="#行号" class="headerlink" title="行号"></a>行号</h1><p>echo “set nu” &gt;&gt; &#x2F;root&#x2F;.vimrc</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">关闭防火墙</span></span><br><span class="line">systemctl disable --now firewalld</span><br><span class="line">iptables -F &amp;&amp; iptables -t nat -F &amp;&amp; iptables -t mangle -F &amp;&amp; iptables -X &amp;&amp; iptables -P FORWARD ACCEPT</span><br><span class="line">systemctl status firewalld</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">关闭selinux</span></span><br><span class="line">sed -i &#x27;/^SELINUX=/cSELINUX=disabled&#x27; /etc/selinux/config</span><br><span class="line">setenforce 0</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">关闭swap分区  备份此文件</span></span><br><span class="line">swapoff -a</span><br><span class="line">sed -i.bak &#x27;/swap/s/^/#/&#x27; /etc/fstab</span><br><span class="line">free -h</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">配置阿里云网络源</span></span><br><span class="line">sed -e &#x27;s|^mirrorlist=|#mirrorlist=|g&#x27; \</span><br><span class="line">    -e &#x27;s|^#baseurl=http://dl.rockylinux.org/$contentdir|baseurl=https://mirrors.aliyun.com/rockylinux|g&#x27; \</span><br><span class="line">    -i.bak \</span><br><span class="line">    /etc/yum.repos.d/Rocky-*.repo</span><br><span class="line"></span><br><span class="line">dnf makecache</span><br><span class="line">yum -y install epel-release</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">启用 IPv4 数据包转发</span></span><br><span class="line">cat &lt;&lt;EOF | sudo tee /etc/modules-load.d/k8s.conf</span><br><span class="line">overlay</span><br><span class="line">br_netfilter</span><br><span class="line">EOF</span><br><span class="line"></span><br><span class="line">sudo modprobe overlay</span><br><span class="line">sudo modprobe br_netfilter</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">设置所需的 sysctl 参数，参数在重新启动后保持不变</span></span><br><span class="line">cat &lt;&lt;EOF | sudo tee /etc/sysctl.d/k8s.conf</span><br><span class="line">net.bridge.bridge-nf-call-iptables  = 1</span><br><span class="line">net.bridge.bridge-nf-call-ip6tables = 1</span><br><span class="line">net.ipv4.ip_forward                 = 1</span><br><span class="line">EOF</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">应用 sysctl 参数而不重新启动</span></span><br><span class="line">sudo sysctl --system</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">查看是否生效</span></span><br><span class="line">lsmod | grep br_netfilter</span><br><span class="line">lsmod | grep overlay</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">时间服务</span></span><br><span class="line">dnf -y install chrony</span><br><span class="line">systemctl enable --now chronyd</span><br><span class="line">timedatectl </span><br><span class="line">date</span><br><span class="line">chronyc sources</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">continaerd</span></span><br><span class="line">wget -O /etc/yum.repos.d/docker-ce.repo https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo</span><br><span class="line">dnf install -y containerd </span><br><span class="line">ctr --version</span><br><span class="line">ctr containerd.io 1.7.19</span><br><span class="line">mkdir -p /etc/containerd</span><br><span class="line">containerd config default &gt; /etc/containerd/config.toml</span><br><span class="line">sed -i &#x27;s/registry.k8s.io/registry.aliyuncs.com\/google_containers/&#x27; /etc/containerd/config.toml</span><br><span class="line">SystemdCgroup = true</span><br><span class="line">systemctl enable --now containerd</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">cat &lt;&lt;EOF | tee /etc/yum.repos.d/kubernetes.repo</span><br><span class="line">[kubernetes]</span><br><span class="line">name=Kubernetes</span><br><span class="line">baseurl=https://mirrors.aliyun.com/kubernetes-new/core/stable/v1.30/rpm/</span><br><span class="line">enabled=1</span><br><span class="line">gpgcheck=1</span><br><span class="line">gpgkey=https://mirrors.aliyun.com/kubernetes-new/core/stable/v1.30/rpm/repodata/repomd.xml.key</span><br><span class="line">EOF</span><br><span class="line"></span><br><span class="line">dnf install -y kubelet kubeadm kubectl</span><br><span class="line">systemctl enable --now kubelet</span><br><span class="line">kubelet --version</span><br><span class="line">Kubernetes v1.30.3</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">拉去需要的镜像</span></span><br><span class="line">kubeadm config images pull --image-repository registry.aliyuncs.com/google_containers</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">指定容器运行时为containerd</span></span><br><span class="line">crictl config runtime-endpoint /run/containerd/containerd.sock</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">kubectl命令补全</span></span><br><span class="line">kubectl completion bash &gt;/etc/bash_completion.d/kubectl</span><br><span class="line">kubeadm completion bash &gt;/etc/bash_completion.d/kubeadm</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">初始化文件</span></span><br><span class="line">kubeadm config print init-defaults &gt; /etc/kubernetes/init-default.yaml</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">更改容器的镜像地址</span></span><br><span class="line">sed -i &#x27;s/registry.k8s.io/registry.aliyuncs.com\/google_containers/&#x27; /etc/kubernetes/init-default.yaml</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">更改masterip</span></span><br><span class="line">sed -i &#x27;s/1.2.3.4/10.10.10.10/&#x27; /etc/kubernetes/init-default.yaml</span><br><span class="line">kubeadm init --pod-network-cidr=10.244.0.0/16 --apiserver-advertise-address 172.29.1.101 --image-repository registry.aliyuncs.com/google_containers</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">初始化</span></span><br><span class="line">kubeadm init --config=kubeadm-init.yaml | tee kubeadm-init.log</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">wget https://docs.projectcalico.org/manifests/calico.yaml</span><br><span class="line">- name: CALICO_IPV4POOL_CIDR</span><br><span class="line">  value: &quot;192.168.0.0/16&quot;</span><br><span class="line">- name: IP_AUTODETECTION_METHOD</span><br><span class="line">  value: &quot;interface=ens33,ens160&quot;</span><br><span class="line">kubectl apply -f calico.yaml</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>镜像加速配置无需重启服务，即可生效</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#设置crictl</span><br><span class="line">cat &lt;&lt; EOF &gt;&gt; /etc/crictl.yaml</span><br><span class="line">runtime-endpoint: unix:///var/run/containerd/containerd.sock</span><br><span class="line">image-endpoint: unix:///var/run/containerd/containerd.sock</span><br><span class="line">timeout: 10</span><br><span class="line">debug: false</span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://ethanyeun.github.io/2024/07/31/linux%E5%91%BD%E4%BB%A4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/ava.png">
+      <meta itemprop="name" content="ethan">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ethanblog">
+      <meta itemprop="description" content="用自己最爱的方式度过这一生">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | ethanblog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/07/31/linux%E5%91%BD%E4%BB%A4/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-07-31 10:01:35" itemprop="dateCreated datePublished" datetime="2024-07-31T10:01:35+08:00">2024-07-31</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-08-03 13:14:34" itemprop="dateModified" datetime="2024-08-03T13:14:34+08:00">2024-08-03</time>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>463</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="linux命令"><a href="#linux命令" class="headerlink" title="linux命令"></a>linux命令</h1><ol>
+<li><p>alias别名   防止删除错误 方便命令</p>
+</li>
+<li><p>grep -n -a 2 “Failed” &#x2F;var&#x2F;log&#x2F;message  打印上两行  -b打印下两行 -c打印上下两行    grep<code>正则过滤</code></p>
+</li>
+<li><p>sed <code>替换</code></p>
+</li>
+<li><p>vim <code>高亮</code>中的%s#master#node#g  %表示全局，1表示第一行和sed差不多 <code>替换</code>  <code>搜索</code></p>
+</li>
+<li><p>ctrl + v  批量删除  替换</p>
+</li>
+<li><ul>
+<li><p>linux下的软件包类型有<code>rpm简单需要依赖，版本偏低</code>，<code>源码开发的代码需要自己手动打包</code>，<code>二进制预制菜，解压即可使用</code>，<code>yum，最常用只需要有网自己解决依赖</code>除了yum其他的都可能会有依赖centos他们的软件都是rpm结尾的软件包 </p>
+</li>
+<li><p>[rpm包地址](<a target="_blank" rel="noopener" href="https://rpmfind.net/">Rpmfind mirror</a>)</p>
+</li>
+</ul>
+</li>
+<li><p><strong>is-enable</strong>  开机是否自启 systemd软件管理</p>
+</li>
+<li><p>journalctl -xe   是可以进行搜索的</p>
+</li>
+<li><p>zabbix-release（包含repo文件）</p>
+</li>
+<li><p>磁盘满后用  df -sh &#x2F;*  精确到大文件，确认后删除</p>
+</li>
+<li><p>没有包只知道命令可以用<code>yum provides pstree</code>来查询这个包的名称，pstree是查看进程树的 pstree -p查看进程号</p>
+</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://ethanyeun.github.io/2024/07/31/linux%E5%BF%AB%E6%8D%B7%E9%94%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/ava.png">
+      <meta itemprop="name" content="ethan">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ethanblog">
+      <meta itemprop="description" content="用自己最爱的方式度过这一生">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | ethanblog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/07/31/linux%E5%BF%AB%E6%8D%B7%E9%94%AE/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2024-07-31 09:58:26 / 修改时间：09:58:33" itemprop="dateCreated datePublished" datetime="2024-07-31T09:58:26+08:00">2024-07-31</time>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>203</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="linux快捷键"><a href="#linux快捷键" class="headerlink" title="linux快捷键"></a>linux快捷键</h1><h2 id="1-通用快捷键"><a href="#1-通用快捷键" class="headerlink" title="1.通用快捷键"></a>1.通用快捷键</h2><ul>
+<li><p><code>Ctrl + A</code> 或 <code>Home</code>：将光标移动到行首。</p>
+</li>
+<li><p><code>Ctrl + E</code> 或 <code>End</code>：将光标移动到行尾。</p>
+</li>
+<li><p><code>Ctrl + B</code> 或 <code>Left</code>：向左移动光标一个字符。</p>
+</li>
+<li><p><code>Ctrl + F</code> 或 <code>Right</code>：向右移动光标一个字符。</p>
+</li>
+<li><p><code>Ctrl + K</code> 或 <code>Ctrl + U</code>：删除光标后的所有字符&#x2F;剪切光标前的字</p>
+</li>
+</ul>
+<h2 id="2-文件内快捷键"><a href="#2-文件内快捷键" class="headerlink" title="2.文件内快捷键"></a>2.文件内快捷键</h2><ul>
+<li><p><code>G</code>到文件末尾</p>
+</li>
+<li><p><code>gg</code>到文件开头</p>
+</li>
+<li><p><code>d0</code>删除光标前一个字母到首行</p>
+</li>
+<li><p><code>D</code>删除光标整行到末尾</p>
+</li>
+<li><p><code>X</code>删除光标前的字符</p>
+</li>
+<li><p><code>x</code>删除光标后的字符</p>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://ethanyeun.github.io/2024/07/22/%E6%9E%B6%E6%9E%84/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/ava.png">
+      <meta itemprop="name" content="ethan">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ethanblog">
+      <meta itemprop="description" content="用自己最爱的方式度过这一生">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | ethanblog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/07/22/%E6%9E%B6%E6%9E%84/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-07-22 13:42:24" itemprop="dateCreated datePublished" datetime="2024-07-22T13:42:24+08:00">2024-07-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-08-03 13:23:30" itemprop="dateModified" datetime="2024-08-03T13:23:30+08:00">2024-08-03</time>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>340</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="运维架构"><a href="#运维架构" class="headerlink" title="运维架构"></a>运维架构</h1><p>运维知识体系<br>负载均衡 :nginx lvs f5 a10<br>web应用:nginx apache tomcat<br>数据库:mysql oracle db2 sqlserver<br>中间件：redis memcache mongdb<br>缓冲&#x2F;消息队列：MQ redis kafka<br>自动化工具 :ansible jenkins pash gitlab docker<br>日志分析:efk elk<br>监控:zabbix prometheus nagios pt-tools。<br>常见服务:ftp ssh DNS<br>虚拟化:docker k8s KVM<br>编程: shell python java<br>devops开发方案:jenkins gitlab svn elk<br>版本控制:svn git<br>储存:nfs hadoop fastdfs HDFS MFS<br>安全:MD5 fail2ban ddos</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" title="上一页" aria-label="上一页" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav>
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">ethan</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>站点总字数：</span>
+    <span title="站点总字数">25k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">46 分钟</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+<!--
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+-->
+<!-- 网站运行时间的设置 -->
+<span id="timeDate">载入天数...</span>
+<span id="times">载入时分秒...</span>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("07/22/2024 10:00:00"); //此处修改你的建站时间或者网站上线时间
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒.";
+    }
+setInterval("createtime()",250);
+</script>
+
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/" class="github-corner" title="在 GitHub 上关注我" aria-label="在 GitHub 上关注我" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+</body>
+</html>

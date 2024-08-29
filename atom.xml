@@ -6,7 +6,7 @@
   <link href="http://ethanyeun.github.io/atom.xml" rel="self"/>
   
   <link href="http://ethanyeun.github.io/"/>
-  <updated>2024-07-22T05:42:42.799Z</updated>
+  <updated>2024-08-28T13:37:35.665Z</updated>
   <id>http://ethanyeun.github.io/</id>
   
   <author>
@@ -18,16 +18,292 @@
   
   <entry>
     <title></title>
-    <link href="http://ethanyeun.github.io/2024/07/22/babay/"/>
-    <id>http://ethanyeun.github.io/2024/07/22/babay/</id>
+    <link href="http://ethanyeun.github.io/2024/08/16/k8s%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8/"/>
+    <id>http://ethanyeun.github.io/2024/08/16/k8s%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8/</id>
+    <published>2024-08-16T14:29:08.148Z</published>
+    <updated>2024-08-28T13:37:35.665Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;k8s自动补全&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/s</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://ethanyeun.github.io/2024/08/16/initcontainers/"/>
+    <id>http://ethanyeun.github.io/2024/08/16/initcontainers/</id>
+    <published>2024-08-16T14:26:12.672Z</published>
+    <updated>2024-08-16T14:28:57.758Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;initcontainerds&quot;&gt;&lt;a href=&quot;#initcontainerds&quot; class=&quot;headerlink&quot; title=&quot;initcontainerds&quot;&gt;&lt;/a&gt;initcontainerds&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://k</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://ethanyeun.github.io/2024/08/16/taints/"/>
+    <id>http://ethanyeun.github.io/2024/08/16/taints/</id>
+    <published>2024-08-16T12:12:52.675Z</published>
+    <updated>2024-08-16T14:10:10.843Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;taints（污点）&quot;&gt;&lt;a href=&quot;#taints（污点）&quot; class=&quot;headerlink&quot; title=&quot;taints（污点）&quot;&gt;&lt;/a&gt;taints（污点）&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;给节点主动权，我给节点打一个&lt;strong&gt;污点&lt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://ethanyeun.github.io/2024/08/16/podAntiAffinity/"/>
+    <id>http://ethanyeun.github.io/2024/08/16/podAntiAffinity/</id>
+    <published>2024-08-16T12:08:36.715Z</published>
+    <updated>2024-08-16T12:10:44.480Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;podANtiAffinity（反亲和性）&quot;&gt;&lt;a href=&quot;#podANtiAffinity（反亲和性）&quot; class=&quot;headerlink&quot; title=&quot;podANtiAffinity（反亲和性）&quot;&gt;&lt;/a&gt;podANtiAffinity（反亲和性）&lt;/</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://ethanyeun.github.io/2024/08/16/podAffinity/"/>
+    <id>http://ethanyeun.github.io/2024/08/16/podAffinity/</id>
+    <published>2024-08-16T05:55:56.329Z</published>
+    <updated>2024-08-16T08:10:52.722Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;podaffinity&quot;&gt;&lt;a href=&quot;#podaffinity&quot; class=&quot;headerlink&quot; title=&quot;podaffinity&quot;&gt;&lt;/a&gt;podaffinity&lt;/h1&gt;&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://ethanyeun.github.io/2024/08/16/affinity-nodeAffinity/"/>
+    <id>http://ethanyeun.github.io/2024/08/16/affinity-nodeAffinity/</id>
+    <published>2024-08-16T05:07:05.641Z</published>
+    <updated>2024-08-16T05:55:29.098Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;nodeAffinity（亲和性）&quot;&gt;&lt;a href=&quot;#nodeAffinity（亲和性）&quot; class=&quot;headerlink&quot; title=&quot;nodeAffinity（亲和性）&quot;&gt;&lt;/a&gt;nodeAffinity（亲和性）&lt;/h1&gt;&lt;figure class</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://ethanyeun.github.io/2024/08/16/selector/"/>
+    <id>http://ethanyeun.github.io/2024/08/16/selector/</id>
+    <published>2024-08-16T03:11:53.551Z</published>
+    <updated>2024-08-16T05:06:38.542Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;节点选择器&quot;&gt;&lt;a href=&quot;#节点选择器&quot; class=&quot;headerlink&quot; title=&quot;节点选择器&quot;&gt;&lt;/a&gt;节点选择器&lt;/h1&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://ethanyeun.github.io/2024/08/15/lables/"/>
+    <id>http://ethanyeun.github.io/2024/08/15/lables/</id>
+    <published>2024-08-15T10:27:20.389Z</published>
+    <updated>2024-08-16T04:12:49.079Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span c</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://ethanyeun.github.io/2024/08/15/namesapce/"/>
+    <id>http://ethanyeun.github.io/2024/08/15/namesapce/</id>
+    <published>2024-08-15T10:09:56.688Z</published>
+    <updated>2024-08-15T10:25:20.515Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;namespace-资源限制&quot;&gt;&lt;a href=&quot;#namespace-资源限制&quot; class=&quot;headerlink&quot; title=&quot;namespace 资源限制&quot;&gt;&lt;/a&gt;namespace 资源限制&lt;/h1&gt;&lt;figure class=&quot;highlight </summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://ethanyeun.github.io/2024/08/14/kubectl%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>http://ethanyeun.github.io/2024/08/14/kubectl%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
+    <published>2024-08-14T08:29:08.559Z</published>
+    <updated>2024-08-14T12:25:14.906Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;kubectl常用命令&lt;/p&gt;
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/s</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://ethanyeun.github.io/2024/08/13/docker%E9%95%9C%E5%83%8F%E5%AF%BC%E5%85%A5k8s/"/>
+    <id>http://ethanyeun.github.io/2024/08/13/docker%E9%95%9C%E5%83%8F%E5%AF%BC%E5%85%A5k8s/</id>
+    <published>2024-08-13T14:46:16.699Z</published>
+    <updated>2024-08-28T12:14:58.775Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;docker镜像导入k8s&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://ethanyeun.github.io/2024/08/13/k8s/"/>
+    <id>http://ethanyeun.github.io/2024/08/13/k8s/</id>
+    <published>2024-08-13T10:28:23.239Z</published>
+    <updated>2024-08-13T14:46:36.851Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;k8s1-30安装&quot;&gt;&lt;a href=&quot;#k8s1-30安装&quot; class=&quot;headerlink&quot; title=&quot;k8s1.30安装&quot;&gt;&lt;/a&gt;k8s1.30安装&lt;/h1&gt;&lt;h2 id=&quot;1-环境配置（所有）&quot;&gt;&lt;a href=&quot;#1-环境配置（所有）&quot; cla</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://ethanyeun.github.io/2024/08/12/k8s.1.30.3%E5%AE%89%E8%A3%85%E8%AF%A6%E7%BB%86/"/>
+    <id>http://ethanyeun.github.io/2024/08/12/k8s.1.30.3%E5%AE%89%E8%A3%85%E8%AF%A6%E7%BB%86/</id>
+    <published>2024-08-12T08:09:54.693Z</published>
+    <updated>2024-08-12T15:54:19.750Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;k8s1-30安装&quot;&gt;&lt;a href=&quot;#k8s1-30安装&quot; class=&quot;headerlink&quot; title=&quot;k8s1.30安装&quot;&gt;&lt;/a&gt;k8s1.30安装&lt;/h1&gt;&lt;h2 id=&quot;1-环境配置（所有）&quot;&gt;&lt;a href=&quot;#1-环境配置（所有）&quot; cla</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://ethanyeun.github.io/2024/07/31/linux%E5%91%BD%E4%BB%A4/"/>
+    <id>http://ethanyeun.github.io/2024/07/31/linux%E5%91%BD%E4%BB%A4/</id>
+    <published>2024-07-31T02:01:35.682Z</published>
+    <updated>2024-08-03T05:14:34.376Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;linux命令&quot;&gt;&lt;a href=&quot;#linux命令&quot; class=&quot;headerlink&quot; title=&quot;linux命令&quot;&gt;&lt;/a&gt;linux命令&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;alias别名   防止删除错误 方便命令&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;gr</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://ethanyeun.github.io/2024/07/31/linux%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    <id>http://ethanyeun.github.io/2024/07/31/linux%E5%BF%AB%E6%8D%B7%E9%94%AE/</id>
+    <published>2024-07-31T01:58:26.188Z</published>
+    <updated>2024-07-31T01:58:33.153Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;linux快捷键&quot;&gt;&lt;a href=&quot;#linux快捷键&quot; class=&quot;headerlink&quot; title=&quot;linux快捷键&quot;&gt;&lt;/a&gt;linux快捷键&lt;/h1&gt;&lt;h2 id=&quot;1-通用快捷键&quot;&gt;&lt;a href=&quot;#1-通用快捷键&quot; class=&quot;header</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://ethanyeun.github.io/2024/07/22/%E6%9E%B6%E6%9E%84/"/>
+    <id>http://ethanyeun.github.io/2024/07/22/%E6%9E%B6%E6%9E%84/</id>
     <published>2024-07-22T05:42:24.278Z</published>
-    <updated>2024-07-22T05:42:42.799Z</updated>
+    <updated>2024-08-03T05:23:30.851Z</updated>
     
     
       
       
-    <summary type="html">&lt;p&gt;你好baby&lt;/p&gt;
-</summary>
+    <summary type="html">&lt;h1 id=&quot;运维架构&quot;&gt;&lt;a href=&quot;#运维架构&quot; class=&quot;headerlink&quot; title=&quot;运维架构&quot;&gt;&lt;/a&gt;运维架构&lt;/h1&gt;&lt;p&gt;运维知识体系&lt;br&gt;负载均衡 :nginx lvs f5 a10&lt;br&gt;web应用:nginx apache tomcat&lt;</summary>
       
     
     
