@@ -6,7 +6,7 @@
   <link href="http://ethanyeun.github.io/atom.xml" rel="self"/>
   
   <link href="http://ethanyeun.github.io/"/>
-  <updated>2024-08-29T07:59:42.815Z</updated>
+  <updated>2024-08-29T08:43:53.199Z</updated>
   <id>http://ethanyeun.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>k8s补全</title>
+    <title>初始化容器</title>
     <link href="http://ethanyeun.github.io/2024/08/29/initcontainers/"/>
     <id>http://ethanyeun.github.io/2024/08/29/initcontainers/</id>
     <published>2024-08-29T02:52:30.000Z</published>
-    <updated>2024-08-29T07:59:42.815Z</updated>
+    <updated>2024-08-29T08:43:53.199Z</updated>
     
     
     <summary type="html">折叠</summary>
