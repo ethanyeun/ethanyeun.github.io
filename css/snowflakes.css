@@ -4,30 +4,34 @@
   }
 }
 
+@keyframes snowflake-float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(50vh) rotate(180deg);
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
+
 .snowflake {
   position: absolute;
-  top: -10px;
   width: 10px;
   height: 10px;
   background-color: #fff;
-  opacity: 0.8;
   border-radius: 50%;
-  animation: snowflake-fall linear infinite;
+  opacity: 0.8;
+  animation: snowflake-fall linear infinite, snowflake-float ease-in-out infinite;
 }
 
 .snowflake:nth-of-type(odd) {
-  animation-duration: 15s;
-  animation-delay: 0s;
+  left: calc(100% * var(--random-left));
+  animation-duration: calc(10s + (var(--random-duration) * 10s));
 }
 
 .snowflake:nth-of-type(even) {
-  animation-duration: 20s;
-  animation-delay: 5s;
-}
-
-/* Randomize snowflake positions and sizes */
-.snowflake {
   left: calc(100% * var(--random-left));
-  animation-duration: calc(10s + (var(--random-duration) * 10s));
-  opacity: var(--random-opacity);
+  animation-duration: calc(15s + (var(--random-duration) * 15s));
 }
