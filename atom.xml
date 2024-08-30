@@ -6,7 +6,7 @@
   <link href="http://ethanyeun.github.io/atom.xml" rel="self"/>
   
   <link href="http://ethanyeun.github.io/"/>
-  <updated>2024-08-29T10:42:56.413Z</updated>
+  <updated>2024-08-29T11:46:36.635Z</updated>
   <id>http://ethanyeun.github.io/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>kubernetes补全</title>
+    <link href="http://ethanyeun.github.io/2024/08/29/bash-completion/"/>
+    <id>http://ethanyeun.github.io/2024/08/29/bash-completion/</id>
+    <published>2024-08-29T02:52:30.000Z</published>
+    <updated>2024-08-29T11:46:36.635Z</updated>
+    
+    
+    <summary type="html">&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;dnf -y install bash-completion&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;source /usr/share/bash-completion/bash_completion&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;source &amp;lt;(kubectl completion bash)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;echo &amp;quot;source &amp;lt;(kubectl completion bash)&amp;quot; &amp;gt;&amp;gt; ~/.bashrc`&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    
+    <category term="k8s" scheme="http://ethanyeun.github.io/tags/k8s/"/>
+    
+  </entry>
   
   <entry>
     <title>initcontainerds（初始化容器）</title>
@@ -32,23 +49,6 @@
 &lt;li&gt;可以完成与预先指定的任务,阻止或者延迟容器启动&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;</summary>
-    
-    
-    
-    
-    <category term="k8s" scheme="http://ethanyeun.github.io/tags/k8s/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>kubernetes补全</title>
-    <link href="http://ethanyeun.github.io/2024/08/29/bash-completion/"/>
-    <id>http://ethanyeun.github.io/2024/08/29/bash-completion/</id>
-    <published>2024-08-29T02:52:30.000Z</published>
-    <updated>2024-08-29T11:46:36.635Z</updated>
-    
-    
-    <summary type="html">&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;dnf -y install bash-completion&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;source /usr/share/bash-completion/bash_completion&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;source &amp;lt;(kubectl completion bash)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;echo &amp;quot;source &amp;lt;(kubectl completion bash)&amp;quot; &amp;gt;&amp;gt; ~/.bashrc`&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
