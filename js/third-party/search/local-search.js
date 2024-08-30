@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Perform local searching
       resultItems = localSearch.getResultItems(keywords);
     }
+<!--
     if (keywords.length === 1 && keywords[0] === '') {
       container.innerHTML = '<div class="search-result-icon"><i class="fa fa-search fa-5x"></i></div>';
     } else if (resultItems.length === 0) {
@@ -37,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         return right.id - left.id;
       });
+-->
       const stats = CONFIG.i18n.hits.replace('${hits}', resultItems.length);
 
       container.innerHTML = `<div class="search-stats">${stats}</div>
