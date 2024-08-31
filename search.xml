@@ -3,9 +3,12 @@
   <entry>
     <title>kubernetes补全</title>
     <url>/2024/08/29/bash-completion/</url>
-    <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">dnf -y install bash-completion</span><br><span class="line">source /usr/share/bash-completion/bash_completion</span><br><span class="line">source &lt;(kubectl completion bash)</span><br><span class="line">echo &quot;source &lt;(kubectl completion bash)&quot; &gt;&gt; ~/.bashrc`</span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<span id="more"></span>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">dnf -y install bash-completion</span><br><span class="line">source /usr/share/bash-completion/bash_completion</span><br><span class="line">source &lt;(kubectl completion bash)</span><br><span class="line">echo &quot;source &lt;(kubectl completion bash)&quot; &gt;&gt; ~/.bashrc`</span><br></pre></td></tr></table></figure>
 
-<span id="more"></span>
+<!-- more -->
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">live2d:</span><br><span class="line">      enable: true</span><br><span class="line">      scriptFrom: local</span><br><span class="line">      model:</span><br><span class="line">        scale: 1</span><br><span class="line">        hHeadPos: 0.5</span><br><span class="line">        vHeadPos: 0.618</span><br><span class="line">      display:</span><br><span class="line">        superSample: 2</span><br><span class="line">        width: 150</span><br><span class="line">        height: 300</span><br><span class="line">        position: right</span><br><span class="line">        hOffset: 0</span><br><span class="line">        vOffset: -20</span><br><span class="line">     mobile:</span><br><span class="line">        show: false</span><br><span class="line">      react:</span><br><span class="line">        opacityDefault: 0.5</span><br><span class="line">        opacityOnHover: 0.</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>dev</category>
