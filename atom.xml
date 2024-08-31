@@ -6,7 +6,7 @@
   <link href="http://ethanyeun.github.io/atom.xml" rel="self"/>
   
   <link href="http://ethanyeun.github.io/"/>
-  <updated>2024-08-31T18:59:10.180Z</updated>
+  <updated>2024-08-31T22:17:25.527Z</updated>
   <id>http://ethanyeun.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://ethanyeun.github.io/2024/08/29/bash-completion/"/>
     <id>http://ethanyeun.github.io/2024/08/29/bash-completion/</id>
     <published>2024-08-29T02:52:30.000Z</published>
-    <updated>2024-08-31T18:59:10.180Z</updated>
+    <updated>2024-08-31T22:17:25.527Z</updated>
     
     
     <summary type="html">&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;dnf -y install bash-completion&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;source /usr/share/bash-completion/bash_completion&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;source &amp;lt;(kubectl completion bash)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;echo &amp;quot;source &amp;lt;(kubectl completion bash)&amp;quot; &amp;gt;&amp;gt; ~/.bashrc`&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
@@ -46,6 +46,29 @@
     
     
     <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
+    
+    
+    
+    <category term="dev" scheme="http://ethanyeun.github.io/categories/dev/"/>
+    
+    <category term="k8s" scheme="http://ethanyeun.github.io/categories/dev/k8s/"/>
+    
+    
+    <category term="k8s" scheme="http://ethanyeun.github.io/tags/k8s/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>docker镜像导入k8s</title>
+    <link href="http://ethanyeun.github.io/2024/08/29/docker%E9%95%9C%E5%83%8F%E5%AF%BC%E5%85%A5k8s/"/>
+    <id>http://ethanyeun.github.io/2024/08/29/docker%E9%95%9C%E5%83%8F%E5%AF%BC%E5%85%A5k8s/</id>
+    <published>2024-08-29T02:52:30.000Z</published>
+    <updated>2024-08-31T22:26:44.302Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;也可以在/etc/containerd/cer.d/下面添加docker，aliyun，tengxun各种镜像加速，他就能自动识别各种镜像&lt;/code&gt;也可以使用手动的方法导入镜像&lt;/li&gt;
+&lt;/ul&gt;</summary>
     
     
     

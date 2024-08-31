@@ -40,4 +40,25 @@
         <tag>k8s</tag>
       </tags>
   </entry>
+  <entry>
+    <title>docker镜像导入k8s</title>
+    <url>/2024/08/29/docker%E9%95%9C%E5%83%8F%E5%AF%BC%E5%85%A5k8s/</url>
+    <content><![CDATA[<ul>
+<li><code>也可以在/etc/containerd/cer.d/下面添加docker，aliyun，tengxun各种镜像加速，他就能自动识别各种镜像</code>也可以使用手动的方法导入镜像</li>
+</ul>
+<span id="more"></span>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#设置docker镜像加速地址</span><br><span class="line">cat /etc/docker/daemon.json</span><br><span class="line">&#123;</span><br><span class="line">  &quot;registry-mirrors&quot;: [&quot;https://docker.rainbond.cc/&quot;,&quot;https://docker.m.daocloud.io&quot;,&quot;https://noohub.ru&quot;,&quot;https://huecker.io&quot;,&quot;https://dockerhub.timeweb.cloud&quot;]</span><br><span class="line">&#125;</span><br><span class="line">#重启后拉去镜像</span><br><span class="line">docker pull nginx</span><br><span class="line">Using default tag: latest</span><br><span class="line"> latest: Pulling from library/nginx</span><br><span class="line">e4fff0779e6d: Pull complete</span><br><span class="line">9c4e4e507b08: Pull complete</span><br><span class="line">85664e7b25d6: Pull complete</span><br><span class="line">e9d00ba15cc0: Pull complete</span><br><span class="line">ca3474dd2ca6: Pull complete</span><br><span class="line">472851929ad7: Pull complete</span><br><span class="line">ed60582f2661: Pull complete</span><br><span class="line">Digest: sha256:93db6ea665b5485e59f0b35e506456b5055925d43011bdcc459d556332d231a2</span><br><span class="line">Status: Downloaded newer image for nginx:latest</span><br><span class="line">docker.io/library/nginx:latest</span><br><span class="line"></span><br><span class="line">#查看镜像</span><br><span class="line">[root@master01 ~]# docker images</span><br><span class="line">REPOSITORY   TAG       IMAGE ID       CREATED       SIZE</span><br><span class="line">nginx        latest    900dca2a61f5   7 weeks ago   188MB</span><br><span class="line"></span><br><span class="line">#保存镜像</span><br><span class="line">[root@master01 ~]# docker save -o nginx.tar.gz nginx:latest</span><br><span class="line"></span><br><span class="line">#查看镜像成功</span><br><span class="line">[root@master01 ~]# ls</span><br><span class="line">anaconda-ks.cfg  nginx.tar.gz</span><br><span class="line"></span><br><span class="line">#ctr加入域名导入镜像</span><br><span class="line">[root@master01 ~]# ctr -n k8s.io image import nginx.tar.gz</span><br><span class="line">unpacking docker.io/library/nginx:latest (sha256:7183446dbb193731a504732a9399947a37f54477a61efff97113ebd23f31ad00)...done</span><br><span class="line"></span><br><span class="line">#删除镜像</span><br><span class="line">[root@master01 ~]# crictl rmi docker.io/library/nginx</span><br><span class="line">Deleted: docker.io/library/nginx:latest</span><br><span class="line"></span><br><span class="line">#导入镜像</span><br><span class="line">[root@master01 ~]# ctr -n k8s.io image import nginx.tar.gz</span><br><span class="line">unpacking docker.io/library/nginx:latest (sha256:7183446dbb193731a504732a9399947a37f54477a61efff97113ebd23f31ad00)...done</span><br><span class="line">#查看镜像</span><br><span class="line"></span><br><span class="line">[root@master01 ~]# crictl images</span><br><span class="line">IMAGE                                                             TAG                 IMAGE ID            SIZE</span><br><span class="line">docker.io/library/nginx                                           latest              900dca2a61f57       192MB</span><br><span class="line">registry.aliyuncs.com/google_containers/nginx                     latest              </span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
+      <categories>
+        <category>dev</category>
+        <category>k8s</category>
+      </categories>
+      <tags>
+        <tag>k8s</tag>
+      </tags>
+  </entry>
 </search>
