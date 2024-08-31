@@ -30,6 +30,10 @@
   </div>
 </div>
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>dev</category>
+        <category>k8s</category>
+      </categories>
       <tags>
         <tag>k8s</tag>
       </tags>

@@ -42,12 +42,16 @@
     <link href="http://ethanyeun.github.io/2024/08/29/initcontainers/"/>
     <id>http://ethanyeun.github.io/2024/08/29/initcontainers/</id>
     <published>2024-08-29T02:52:30.000Z</published>
-    <updated>2024-08-31T18:03:46.828Z</updated>
+    <updated>2024-08-31T18:43:10.769Z</updated>
     
     
     <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
     
     
+    
+    <category term="dev" scheme="http://ethanyeun.github.io/categories/dev/"/>
+    
+    <category term="k8s" scheme="http://ethanyeun.github.io/categories/dev/k8s/"/>
     
     
     <category term="k8s" scheme="http://ethanyeun.github.io/tags/k8s/"/>
