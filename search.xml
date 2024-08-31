@@ -7,6 +7,10 @@
 
 <span id="more"></span>
 ]]></content>
+      <categories>
+        <category>dev</category>
+        <category>k8s</category>
+      </categories>
       <tags>
         <tag>k8s</tag>
       </tags>
