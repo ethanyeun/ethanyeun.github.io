@@ -2,7 +2,6 @@ body {
   margin: 0;
   overflow: hidden; /* Prevent scrollbars */
 }
-
 .snowflakes {
   position: fixed;
   top: 0;
@@ -13,17 +12,54 @@ body {
   z-index: 9999;
   overflow: hidden;
 }
-
 .snowflakes span {
   position: absolute;
   color: #fff; /* Snowflakes color */
   font-size: 1.5rem; /* Base font size for snowflakes */
   user-select: none; /* Prevent text selection */
   opacity: 0.8;
-  filter: drop-shadow(0 0 5px #ffffff); /* Add a slight glow */
+  filter: drop-shadow(0 0 5px #fff); /* Add a slight glow */
   animation: fall linear infinite;
 }
-
+@-moz-keyframes fall {
+  0% {
+    transform: translateY(-100vh);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fall {
+  0% {
+    transform: translateY(-100vh);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+@-o-keyframes fall {
+  0% {
+    transform: translateY(-100vh);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
 @keyframes fall {
   0% {
     transform: translateY(-100vh);
