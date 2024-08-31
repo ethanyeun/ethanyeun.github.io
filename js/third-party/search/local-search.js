@@ -25,9 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
       resultItems = localSearch.getResultItems(keywords);
     }
     if (keywords.length === 1 && keywords[0] === '') {
-      container.innerHTML = '<div class="search-result-icon"><i class="fa fa-search fa-5x"></i></div>';
+      //container.innerHTML = '<div class="search-result-icon"><i class="fa fa-search fa-5x"></i></div>';
     } else if (resultItems.length === 0) {
-      container.innerHTML = '<div class="search-result-icon"><i class="far fa-frown fa-5x"></i></div>';
+      //container.innerHTML = '<div class="search-result-icon"><i class="far fa-frown fa-5x"></i></div>';
     } else {
       resultItems.sort((left, right) => {
         if (left.includedCount !== right.includedCount) {
