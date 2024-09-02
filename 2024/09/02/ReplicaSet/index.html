@@ -23,28 +23,28 @@
 <script class="next-config" data-name="main" type="application/json">{"hostname":"ethanyeun.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":true,"show_result":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"enable":true,"use":"waline","style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"path":"search.xml","field":"post","format":"html","trigger":"auto","content":true,"limit":10000,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
 
-    <meta name="description" content="也可以在&#x2F;etc&#x2F;containerd&#x2F;cer.d&#x2F;下面添加docker，aliyun，tengxun各种镜像加速，他就能自动识别各种镜像也可以使用手动的方法导入镜像">
+    <meta name="description" content="1 简介 ReplicaSet 是 Kubernetes 控制器的一种，负责维护一个指定数量的 Pod 副本。它会自动创建、删除 Pod，以确保在任何时间点都有固定数量的 Pod 在运行。  ReplicaSet 通常作为 Deployment 控制器的一部分使用，但也可以单独使用。Deployment 提供了更高级的功能，如滚动更新和 回滚，而 ReplicaSet 专注于维护 Pod 副本的数">
 <meta property="og:type" content="article">
-<meta property="og:title" content="docker镜像导入k8s">
-<meta property="og:url" content="http://ethanyeun.github.io/2024/08/29/docker%E9%95%9C%E5%83%8F%E5%AF%BC%E5%85%A5k8s/index.html">
+<meta property="og:title" content="ReplicaSet（副本集合）">
+<meta property="og:url" content="http://ethanyeun.github.io/2024/09/02/ReplicaSet/index.html">
 <meta property="og:site_name" content="ethanblog">
-<meta property="og:description" content="也可以在&#x2F;etc&#x2F;containerd&#x2F;cer.d&#x2F;下面添加docker，aliyun，tengxun各种镜像加速，他就能自动识别各种镜像也可以使用手动的方法导入镜像">
+<meta property="og:description" content="1 简介 ReplicaSet 是 Kubernetes 控制器的一种，负责维护一个指定数量的 Pod 副本。它会自动创建、删除 Pod，以确保在任何时间点都有固定数量的 Pod 在运行。  ReplicaSet 通常作为 Deployment 控制器的一部分使用，但也可以单独使用。Deployment 提供了更高级的功能，如滚动更新和 回滚，而 ReplicaSet 专注于维护 Pod 副本的数">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-08-29T02:52:30.000Z">
-<meta property="article:modified_time" content="2024-09-02T08:01:36.991Z">
+<meta property="article:published_time" content="2024-09-02T07:59:58.000Z">
+<meta property="article:modified_time" content="2024-09-02T16:25:33.602Z">
 <meta property="article:author" content="ethan">
-<meta property="article:tag" content="k8s">
+<meta property="article:tag" content="Controller-rs">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://ethanyeun.github.io/2024/08/29/docker%E9%95%9C%E5%83%8F%E5%AF%BC%E5%85%A5k8s/">
+<link rel="canonical" href="http://ethanyeun.github.io/2024/09/02/ReplicaSet/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://ethanyeun.github.io/2024/08/29/docker%E9%95%9C%E5%83%8F%E5%AF%BC%E5%85%A5k8s/","path":"2024/08/29/docker镜像导入k8s/","title":"docker镜像导入k8s"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://ethanyeun.github.io/2024/09/02/ReplicaSet/","path":"2024/09/02/ReplicaSet/","title":"ReplicaSet（副本集合）"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>docker镜像导入k8s | ethanblog</title>
+<title>ReplicaSet（副本集合） | ethanblog</title>
   
 
 
@@ -132,7 +132,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -145,6 +145,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E7%AE%80%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">1 简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-ReplicaSet%E7%BB%84%E6%88%90%E9%83%A8%E5%88%86"><span class="nav-number">1.0.1.</span> <span class="nav-text">1.1 ReplicaSet组成部分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-ReplicaSet-yaml"><span class="nav-number">1.0.2.</span> <span class="nav-text">1.2 ReplicaSet yaml</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-1-rs%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="nav-number">1.0.2.1.</span> <span class="nav-text">1.2.1 rs文件夹</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-2-%E5%B8%AE%E5%8A%A9%E5%91%BD%E4%BB%A4%E6%9F%A5"><span class="nav-number">1.0.2.2.</span> <span class="nav-text">1.2.2 帮助命令查</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-3-%E5%89%AF%E6%9C%AC%E4%BC%B8%E7%BC%A9"><span class="nav-number">1.0.2.3.</span> <span class="nav-text">1.2.3 副本伸缩</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-4-%E6%9F%A5%E7%9C%8Brs%E5%92%8C%E7%8A%B6%E6%80%81"><span class="nav-number">1.0.2.4.</span> <span class="nav-text">1.2.4 查看rs和状态</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-5-%E8%B5%84%E6%BA%90%E6%B8%85%E5%8D%95"><span class="nav-number">1.0.2.5.</span> <span class="nav-text">1.2.5 资源清单</span></a></li></ol></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -226,7 +227,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://ethanyeun.github.io/2024/08/29/docker%E9%95%9C%E5%83%8F%E5%AF%BC%E5%85%A5k8s/">
+    <link itemprop="mainEntityOfPage" href="http://ethanyeun.github.io/2024/09/02/ReplicaSet/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/a.png">
@@ -239,12 +240,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="docker镜像导入k8s | ethanblog">
+      <meta itemprop="name" content="ReplicaSet（副本集合） | ethanblog">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          docker镜像导入k8s
+          ReplicaSet（副本集合）
         </h1>
 
         <div class="post-meta-container">
@@ -255,14 +256,14 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2024-08-29 10:52:30" itemprop="dateCreated datePublished" datetime="2024-08-29T10:52:30+08:00">2024-08-29</time>
+      <time title="创建时间：2024-09-02 15:59:58" itemprop="dateCreated datePublished" datetime="2024-09-02T15:59:58+08:00">2024-09-02</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-09-02 16:01:36" itemprop="dateModified" datetime="2024-09-02T16:01:36+08:00">2024-09-02</time>
+      <time title="修改时间：2024-09-03 00:25:33" itemprop="dateModified" datetime="2024-09-03T00:25:33+08:00">2024-09-03</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -274,7 +275,7 @@
         </span>
           ，
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Operations/k8s/" itemprop="url" rel="index"><span itemprop="name">k8s</span></a>
+          <a href="/categories/Operations/k8sa/" itemprop="url" rel="index"><span itemprop="name">k8sa</span></a>
         </span>
     </span>
 
@@ -294,8 +295,8 @@
     </span>
     <span class="post-meta-item-text">Waline：</span>
   
-    <a title="waline" href="/2024/08/29/docker%E9%95%9C%E5%83%8F%E5%AF%BC%E5%85%A5k8s/#waline" itemprop="discussionUrl">
-      <span class="post-comments-count waline-comment-count" data-path="/2024/08/29/docker%E9%95%9C%E5%83%8F%E5%AF%BC%E5%85%A5k8s/" itemprop="commentCount"></span>
+    <a title="waline" href="/2024/09/02/ReplicaSet/#waline" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" data-path="/2024/09/02/ReplicaSet/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -306,7 +307,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>83</span>
+      <span>319</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -323,12 +324,31 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><ul>
-<li><code>也可以在/etc/containerd/cer.d/下面添加docker，aliyun，tengxun各种镜像加速，他就能自动识别各种镜像</code>也可以使用手动的方法导入镜像</li>
+    <div class="post-body" itemprop="articleBody"><h1 id="1-简介"><a href="#1-简介" class="headerlink" title="1 简介"></a>1 简介</h1><ul>
+<li><p><strong>ReplicaSet</strong> 是 Kubernetes 控制器的一种，负责维护一个指定数量的 Pod 副本。它会自动创建、删除 Pod，以确保在任何时间点都有固定数量的 Pod 在运行。</p>
+</li>
+<li><p><strong>ReplicaSet</strong> 通常作为 <strong>Deployment</strong> 控制器的一部分使用，但也可以单独使用。Deployment 提供了更高级的功能，如滚动更新和</p>
+<p>回滚，而 ReplicaSet 专注于维护 Pod 副本的数量。</p>
+</li>
 </ul>
 <span id="more"></span>
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">#设置docker镜像加速地址</span><br><span class="line">cat /etc/docker/daemon.json</span><br><span class="line">&#123;</span><br><span class="line">  &quot;registry-mirrors&quot;: [&quot;https://docker.rainbond.cc/&quot;,&quot;https://docker.m.daocloud.io&quot;,&quot;https://noohub.ru&quot;,&quot;https://huecker.io&quot;,&quot;https://dockerhub.timeweb.cloud&quot;]</span><br><span class="line">&#125;</span><br><span class="line">#重启后拉去镜像</span><br><span class="line">docker pull nginx</span><br><span class="line">Using default tag: latest</span><br><span class="line"> latest: Pulling from library/nginx</span><br><span class="line">e4fff0779e6d: Pull complete</span><br><span class="line">9c4e4e507b08: Pull complete</span><br><span class="line">85664e7b25d6: Pull complete</span><br><span class="line">e9d00ba15cc0: Pull complete</span><br><span class="line">ca3474dd2ca6: Pull complete</span><br><span class="line">472851929ad7: Pull complete</span><br><span class="line">ed60582f2661: Pull complete</span><br><span class="line">Digest: sha256:93db6ea665b5485e59f0b35e506456b5055925d43011bdcc459d556332d231a2</span><br><span class="line">Status: Downloaded newer image for nginx:latest</span><br><span class="line">docker.io/library/nginx:latest</span><br><span class="line"></span><br><span class="line">#查看镜像</span><br><span class="line">[root@master01 ~]# docker images</span><br><span class="line">REPOSITORY   TAG       IMAGE ID       CREATED       SIZE</span><br><span class="line">nginx        latest    900dca2a61f5   7 weeks ago   188MB</span><br><span class="line"></span><br><span class="line">#保存镜像</span><br><span class="line">[root@master01 ~]# docker save -o nginx.tar.gz nginx:latest</span><br><span class="line"></span><br><span class="line">#查看镜像成功</span><br><span class="line">[root@master01 ~]# ls</span><br><span class="line">anaconda-ks.cfg  nginx.tar.gz</span><br><span class="line"></span><br><span class="line">#ctr加入域名导入镜像</span><br><span class="line">[root@master01 ~]# ctr -n k8s.io image import nginx.tar.gz</span><br><span class="line">unpacking docker.io/library/nginx:latest (sha256:7183446dbb193731a504732a9399947a37f54477a61efff97113ebd23f31ad00)...done</span><br><span class="line"></span><br><span class="line">#删除镜像</span><br><span class="line">[root@master01 ~]# crictl rmi docker.io/library/nginx</span><br><span class="line">Deleted: docker.io/library/nginx:latest</span><br><span class="line"></span><br><span class="line">#导入镜像</span><br><span class="line">[root@master01 ~]# ctr -n k8s.io image import nginx.tar.gz</span><br><span class="line">unpacking docker.io/library/nginx:latest (sha256:7183446dbb193731a504732a9399947a37f54477a61efff97113ebd23f31ad00)...done</span><br><span class="line">#查看镜像</span><br><span class="line"></span><br><span class="line">[root@master01 ~]# crictl images</span><br><span class="line">IMAGE                                                             TAG                 IMAGE ID            SIZE</span><br><span class="line">docker.io/library/nginx                                           latest              900dca2a61f57       192MB</span><br><span class="line">registry.aliyuncs.com/google_containers/nginx                     latest              </span><br></pre></td></tr></table></figure>
+<h3 id="1-1-ReplicaSet组成部分"><a href="#1-1-ReplicaSet组成部分" class="headerlink" title="1.1 ReplicaSet组成部分"></a>1.1 <strong>ReplicaSet</strong>组成部分</h3><ul>
+<li>期望的Pod副本数</li>
+<li>Pod选择器（那些标签的pod是我们管理的）</li>
+<li>Pod资源模板（新的pod是通过模板来创建的）</li>
+</ul>
+<h3 id="1-2-ReplicaSet-yaml"><a href="#1-2-ReplicaSet-yaml" class="headerlink" title="1.2 ReplicaSet yaml"></a>1.2 ReplicaSet yaml</h3><h4 id="1-2-1-rs文件夹"><a href="#1-2-1-rs文件夹" class="headerlink" title="1.2.1 rs文件夹"></a>1.2.1 rs文件夹</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> /rs</span><br><span class="line"><span class="built_in">cd</span> /rs</span><br></pre></td></tr></table></figure>
+
+<h4 id="1-2-2-帮助命令查"><a href="#1-2-2-帮助命令查" class="headerlink" title="1.2.2 帮助命令查"></a>1.2.2 帮助命令查</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kubectl explain rs</span><br></pre></td></tr></table></figure>
+
+<h4 id="1-2-3-副本伸缩"><a href="#1-2-3-副本伸缩" class="headerlink" title="1.2.3 副本伸缩"></a>1.2.3 副本伸缩</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kubectl scale replicaset demo --replicas=1</span><br></pre></td></tr></table></figure>
+
+<h4 id="1-2-4-查看rs和状态"><a href="#1-2-4-查看rs和状态" class="headerlink" title="1.2.4 查看rs和状态"></a>1.2.4 查看rs和状态</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">kubectl get rs</span><br><span class="line">kubectl kubectl describe rs demo </span><br></pre></td></tr></table></figure>
+
+<h4 id="1-2-5-资源清单"><a href="#1-2-5-资源清单" class="headerlink" title="1.2.5 资源清单"></a>1.2.5 资源清单</h4><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">apiVersion:</span> <span class="string">apps/v1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">ReplicaSet</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">annotations:</span></span><br><span class="line">    <span class="attr">description:</span> <span class="string">hello</span> <span class="string">everybody</span></span><br><span class="line">    <span class="attr">createby:</span> <span class="string">ethan</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">demo</span></span><br><span class="line">  <span class="attr">labels:</span></span><br><span class="line">    <span class="attr">rs:</span> <span class="string">dd</span></span><br><span class="line">  <span class="attr">namespace:</span> <span class="string">default</span></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">minReadySeconds:</span> <span class="number">3</span> </span><br><span class="line">  <span class="attr">replicas:</span> <span class="number">2</span>     </span><br><span class="line">  <span class="attr">selector:</span></span><br><span class="line">    <span class="attr">matchExpressions:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">key:</span> <span class="string">app</span></span><br><span class="line">      <span class="attr">operator:</span> <span class="string">In</span></span><br><span class="line">      <span class="attr">values:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">example-rs</span></span><br><span class="line">  <span class="attr">template:</span></span><br><span class="line">    <span class="attr">metadata:</span></span><br><span class="line">      <span class="attr">labels:</span></span><br><span class="line">        <span class="attr">app:</span> <span class="string">example-rs</span></span><br><span class="line">    <span class="attr">spec:</span></span><br><span class="line">      <span class="attr">containers:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">example-nginx</span></span><br><span class="line">        <span class="attr">image:</span> <span class="string">nginx:latest</span></span><br><span class="line">        <span class="attr">imagePullPolicy:</span> <span class="string">IfNotPresent</span></span><br><span class="line">        <span class="attr">ports:</span></span><br><span class="line">        <span class="bullet">-</span> <span class="attr">containerPort:</span> <span class="number">8081</span></span><br><span class="line">          <span class="attr">protocol:</span> <span class="string">TCP</span></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">apiVersion:</span> <span class="string">v1</span></span><br><span class="line"><span class="attr">kind:</span> <span class="string">Service</span></span><br><span class="line"><span class="attr">metadata:</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">example-service</span></span><br><span class="line"><span class="attr">spec:</span></span><br><span class="line">  <span class="attr">selector:</span></span><br><span class="line">    <span class="attr">app:</span> <span class="string">example-rs</span></span><br><span class="line">  <span class="attr">ports:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">port:</span> <span class="number">80</span></span><br><span class="line">    <span class="attr">targetPort:</span> <span class="number">8081</span></span><br><span class="line">    <span class="attr">protocol:</span> <span class="string">TCP</span></span><br><span class="line">    <span class="attr">nodePort:</span> <span class="number">30007</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">NodePort</span></span><br></pre></td></tr></table></figure>
+
+
 
 
 
@@ -360,17 +380,20 @@
 </div>
 
           <div class="post-tags">
-              <a href="/tags/k8s/" rel="tag"># k8s</a>
+              <a href="/tags/Controller-rs/" rel="tag"># Controller-rs</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
+                <a href="/2024/08/29/bash-completion/" rel="prev" title="kubernetes补全">
+                  <i class="fa fa-angle-left"></i> kubernetes补全
+                </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2024/08/29/initcontainers/" rel="next" title="initcontainerds（初始化容器）">
-                  initcontainerds（初始化容器） <i class="fa fa-angle-right"></i>
+                <a href="/2024/09/03/Service/" rel="next" title="Service">
+                  Service <i class="fa fa-angle-right"></i>
                 </a>
             </div>
           </div>
@@ -488,7 +511,7 @@
 
 
 
-<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-cn","enable":true,"serverURL":"waline-server-nine-phi.vercel.app","cssUrl":"https://unpkg.com/@waline/client@v2/dist/waline.css","commentCount":true,"pageview":false,"placeholder":"请文明评论呀","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"visitor":true,"comment_count":true,"requiredFields":[],"libUrl":"//unpkg.com/@waline/client@v2/dist/waline.js","el":"#waline","comment":true,"path":"/2024/08/29/docker%E9%95%9C%E5%83%8F%E5%AF%BC%E5%85%A5k8s/"}</script>
+<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-cn","enable":true,"serverURL":"waline-server-nine-phi.vercel.app","cssUrl":"https://unpkg.com/@waline/client@v2/dist/waline.css","commentCount":true,"pageview":false,"placeholder":"请文明评论呀","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"visitor":true,"comment_count":true,"requiredFields":[],"libUrl":"//unpkg.com/@waline/client@v2/dist/waline.js","el":"#waline","comment":true,"path":"/2024/09/02/ReplicaSet/"}</script>
 <link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css">
 <script>
 document.addEventListener('page:loaded', () => {
