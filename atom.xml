@@ -6,7 +6,7 @@
   <link href="http://ethanyeun.github.io/atom.xml" rel="self"/>
   
   <link href="http://ethanyeun.github.io/"/>
-  <updated>2024-09-04T13:18:07.081Z</updated>
+  <updated>2024-09-04T19:36:40.734Z</updated>
   <id>http://ethanyeun.github.io/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Deployment</title>
+    <link href="http://ethanyeun.github.io/2024/09/04/Deployment/"/>
+    <id>http://ethanyeun.github.io/2024/09/04/Deployment/</id>
+    <published>2024-09-04T15:39:10.000Z</published>
+    <updated>2024-09-04T19:36:40.734Z</updated>
+    
+    
+    <summary type="html">Here&#39;s something encrypted, password is required to continue reading.</summary>
+    
+    
+    
+    <category term="Operations" scheme="http://ethanyeun.github.io/categories/Operations/"/>
+    
+    <category term="k8s" scheme="http://ethanyeun.github.io/categories/Operations/k8s/"/>
+    
+    
+    <category term="Controller" scheme="http://ethanyeun.github.io/tags/Controller/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Service(四层代理)</title>
     <link href="http://ethanyeun.github.io/2024/09/03/Service/"/>
     <id>http://ethanyeun.github.io/2024/09/03/Service/</id>
     <published>2024-09-02T16:25:02.000Z</published>
-    <updated>2024-09-04T13:18:07.081Z</updated>
+    <updated>2024-09-04T15:38:52.850Z</updated>
     
     
     <summary type="html">&lt;p&gt;在 Kubernetes 中，&lt;strong&gt;Service&lt;/strong&gt; 是一种关键资源，用于将一组 Pod 暴露为网络服务。它提供了一个稳定的接口（通常是 IP 地址和端口），用于访问这些 Pod，即使它们的 IP 地址会随着时间的变化而变化。Service 的主要作用是使应用程序组件之间的通信更加可靠和可扩展。&lt;/p&gt;</summary>
@@ -30,7 +51,7 @@
     
     <category term="Operations" scheme="http://ethanyeun.github.io/categories/Operations/"/>
     
-    <category term="k8sa" scheme="http://ethanyeun.github.io/categories/Operations/k8sa/"/>
+    <category term="k8s" scheme="http://ethanyeun.github.io/categories/Operations/k8s/"/>
     
     
     <category term="object" scheme="http://ethanyeun.github.io/tags/object/"/>
@@ -42,7 +63,7 @@
     <link href="http://ethanyeun.github.io/2024/09/02/ReplicaSet/"/>
     <id>http://ethanyeun.github.io/2024/09/02/ReplicaSet/</id>
     <published>2024-09-02T07:59:58.000Z</published>
-    <updated>2024-09-04T05:25:54.078Z</updated>
+    <updated>2024-09-04T15:22:36.655Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;1-简介&quot;&gt;&lt;a href=&quot;#1-简介&quot; class=&quot;headerlink&quot; title=&quot;1 简介&quot;&gt;&lt;/a&gt;1 简介&lt;/h1&gt;&lt;ul&gt;
@@ -57,7 +78,7 @@
     
     <category term="Operations" scheme="http://ethanyeun.github.io/categories/Operations/"/>
     
-    <category term="k8sa" scheme="http://ethanyeun.github.io/categories/Operations/k8sa/"/>
+    <category term="k8s" scheme="http://ethanyeun.github.io/categories/Operations/k8s/"/>
     
     
     <category term="Controller" scheme="http://ethanyeun.github.io/tags/Controller/"/>
