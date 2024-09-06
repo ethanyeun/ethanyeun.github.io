@@ -6,7 +6,7 @@
   <link href="http://ethanyeun.github.io/atom.xml" rel="self"/>
   
   <link href="http://ethanyeun.github.io/"/>
-  <updated>2024-09-04T19:36:40.734Z</updated>
+  <updated>2024-09-06T16:36:26.809Z</updated>
   <id>http://ethanyeun.github.io/</id>
   
   <author>
@@ -15,6 +15,65 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>StatefulSet</title>
+    <link href="http://ethanyeun.github.io/2024/09/06/StatefulSet/"/>
+    <id>http://ethanyeun.github.io/2024/09/06/StatefulSet/</id>
+    <published>2024-09-06T15:59:57.000Z</published>
+    <updated>2024-09-06T16:36:26.809Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;StatefulSet-用于部署和管理有状态应用，它确保：&quot;&gt;&lt;a href=&quot;#StatefulSet-用于部署和管理有状态应用，它确保：&quot; class=&quot;headerlink&quot; title=&quot;StatefulSet 用于部署和管理有状态应用，它确保：&quot;&gt;&lt;/a&gt;StatefulSet 用于部署和管理有状态应用，它确保：&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;稳定的网络标识&lt;/strong&gt;：每个 Pod 在 StatefulSet 中都有一个固定的主机名，不会随着重启或重新调度而改变。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;稳定的持久化存储&lt;/strong&gt;：每个 Pod 都有自己的 PersistentVolume（PV），且不会与其他 Pod 共享。即使 Pod 被删除或重新调度，它仍然会保持对同一存储的访问。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;有序部署与更新&lt;/strong&gt;：StatefulSet 确保 Pod 按照顺序启动、关闭和更新。这对某些需要依赖顺序的分布式系统非常重要。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;有状态和无状态的区别&quot;&gt;&lt;a href=&quot;#有状态和无状态的区别&quot; class=&quot;headerlink&quot; title=&quot;有状态和无状态的区别&quot;&gt;&lt;/a&gt;有状态和无状态的区别&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;statefulset是有状态服务，有状态服务关联性，需要对命令或者数据进行关联，比如数据库和缓存等&lt;/p&gt;
+&lt;p&gt;而无状态服务对上一步操作命令或者数据没有关联，比如web，web上一个请求的没有影响，只需接收回应就可以了&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h4 id=&quot;StatefuelSet&quot;&gt;&lt;a href=&quot;#StatefuelSet&quot; class=&quot;headerlink&quot; title=&quot;StatefuelSet&quot;&gt;&lt;/a&gt;StatefuelSet&lt;/h4&gt;&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;kubectl explain statefulset&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;apiVersion: &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;kind:&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;​	&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;gdsf dsaf &amp;lt;&amp;#x2F;&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;u&amp;gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+
+&lt;/blockquote&gt;
+</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Volume</title>
+    <link href="http://ethanyeun.github.io/2024/09/05/Volume/"/>
+    <id>http://ethanyeun.github.io/2024/09/05/Volume/</id>
+    <published>2024-09-05T08:40:17.000Z</published>
+    <updated>2024-09-06T16:36:13.577Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;emptyDir&quot;&gt;&lt;a href=&quot;#emptyDir&quot; class=&quot;headerlink&quot; title=&quot;emptyDir&quot;&gt;&lt;/a&gt;emptyDir&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;临时存储&lt;/strong&gt;：数据仅在 Pod 的生命周期内有效。Pod 终止后，数据会丢失。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;节点本地存储&lt;/strong&gt;：&lt;code&gt;emptyDir&lt;/code&gt; 卷存储在节点本地磁盘上，因此它不能跨节点共享。如果 Pod 被调度到另一个节点，新节点的 &lt;code&gt;emptyDir&lt;/code&gt; 将是空的。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数据共享&lt;/strong&gt;：Pod 中的所有容器可以通过 &lt;code&gt;emptyDir&lt;/code&gt; 卷共享数据。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Deployment</title>
