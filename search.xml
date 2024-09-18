@@ -343,24 +343,79 @@
 <li><strong>有序部署与更新</strong>：StatefulSet 确保 Pod 按照顺序启动、关闭和更新。这对某些需要依赖顺序的分布式系统非常重要。</li>
 </ol>
 <h3 id="有状态和无状态的区别"><a href="#有状态和无状态的区别" class="headerlink" title="有状态和无状态的区别"></a>有状态和无状态的区别</h3><blockquote>
-<p>statefulset是有状态服务，有状态服务关联性，需要对命令或者数据进行关联，比如数据库和缓存等</p>
-<p>而无状态服务对上一步操作命令或者数据没有关联，比如web，web上一个请求的没有影响，只需接收回应就可以了</p>
+<p>statefulset是有状态服务，有状态服务关联性，需要对命令或者数据进行关联，比如数据库和缓存等,更改后对后续有影响。</p>
+<p>而无状态服务对上一步操作命令或者数据没有关联，比如web，web上一个请求的没有影响，只需接收回应就可以了。</p>
 </blockquote>
-<hr>
-<h4 id="StatefuelSet"><a href="#StatefuelSet" class="headerlink" title="StatefuelSet"></a>StatefuelSet</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">kubectl explain statefulset</span><br><span class="line">apiVersion: </span><br><span class="line">kind:</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
 
-<blockquote>
-<p>​	</p>
-<p><u>gdsf dsaf &lt;&#x2F;</p>
-<p>u&gt;</p>
-<hr>
-<hr>
-<hr>
-<hr>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="StatefuelSet"><a href="#StatefuelSet" class="headerlink" title="StatefuelSet"></a>StatefuelSet</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">kubectl explain statefulset</span><br><span class="line">apiVersion: apps/v1</span><br><span class="line">kind: StatefulSet</span><br></pre></td></tr></table></figure>
 
 
-</blockquote>
+
+
+
 ]]></content>
+  </entry>
+  <entry>
+    <title>Daemonset</title>
+    <url>/2024/09/09/Daemonset/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Prometheus binary</title>
+    <url>/2024/09/18/Prometheus-binary/</url>
+    <content><![CDATA[<h3 id="二进制部署在同一台宿主机"><a href="#二进制部署在同一台宿主机" class="headerlink" title="二进制部署在同一台宿主机"></a>二进制部署在同一台宿主机</h3><blockquote>
+<p>部署二进制是为了更好的了解prometheus</p>
+<p>官网的下载地址都是github上下载的</p>
+<p><a href="https://prometheus.io/download/">Download | Prometheus</a></p>
+</blockquote>
+<span id="more"></span>
+
+<h4 id="部署prometheus"><a href="#部署prometheus" class="headerlink" title="部署prometheus"></a>部署prometheus</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget https://github.com/prometheus/prometheus/releases/download/v3.0.0-beta.0/prometheus-3.0.0-beta.0.linux-amd64.tar.gz </span><br><span class="line"></span><br><span class="line">tar xf prometheus-2.54.1.linux-amd64.tar.gz </span><br><span class="line"></span><br><span class="line"> mv prometheus-2.54.1.linux-amd64 /usr/local/bin/prometheus </span><br><span class="line"></span><br><span class="line">cat &gt; /etc/systemd/system/prometheus.service &lt;&lt; EOF</span><br><span class="line">[Unit]</span><br><span class="line">Description=Prometheus Service</span><br><span class="line">After=network.target</span><br><span class="line">[Service]</span><br><span class="line">ExecStart=/usr/local/bin/prometheus/prometheus \</span><br><span class="line">--config.file=/usr/local/bin/prometheus/prometheus.yml</span><br><span class="line">Restart=on-failure</span><br><span class="line">User=prometheus</span><br><span class="line">Group=prometheus</span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br><span class="line">EOF</span><br><span class="line"></span><br><span class="line">useradd -M -s /sbin/nologin prometheus</span><br><span class="line"></span><br><span class="line">chown -R prometheus:prometheus /usr/local/bin/prometheus/</span><br><span class="line"></span><br><span class="line">sudo systemctl daemon-reload</span><br><span class="line">sudo systemctl start prometheus</span><br><span class="line">sudo systemctl enable prometheus</span><br></pre></td></tr></table></figure>
+
+<h4 id="查看网页"><a href="#查看网页" class="headerlink" title="查看网页"></a>查看网页</h4><ul>
+<li>localhost:9090</li>
+</ul>
+<p><img src="/./assets/image-20240918233708008.png" alt="image-20240918233708008"></p>
+<h4 id="查看指标"><a href="#查看指标" class="headerlink" title="查看指标"></a>查看指标</h4><p><a href="http://localhost:9090/metrics">http://localhost:9090/metrics</a></p>
+<p><img src="/./assets/image-20240918233853828.png" alt="image-20240918233853828"></p>
+<h4 id="查看报错"><a href="#查看报错" class="headerlink" title="查看报错"></a>查看报错</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">journalctl -u prometheus.service</span><br></pre></td></tr></table></figure>
+
+<h3 id="部署node-exporter"><a href="#部署node-exporter" class="headerlink" title="部署node_exporter"></a>部署node_exporter</h3><blockquote>
+<p>在node节点部署</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">wget https://github.com/prometheus/node_exporter/releases/download/v1.8.2/node_exporter-1.8.2.linux-amd64.tar.gz</span><br><span class="line"></span><br><span class="line">tar xf node_exporter-1.8.2.linux-amd64.tar.gz</span><br><span class="line"></span><br><span class="line">mv node_exporter-1.8.2.linux-amd64 /usr/local/bin/node_exporter</span><br><span class="line"></span><br><span class="line">useradd -M -s /sbin/nologin node_exporter</span><br><span class="line"></span><br><span class="line">chown -R node_exporter:node_exporter /usr/local/bin/node_exporter/ </span><br><span class="line"></span><br><span class="line">cat &gt; /etc/systemd/system/node_exporter.service &lt;&lt; EOF</span><br><span class="line">[Unit]</span><br><span class="line">Description=Node Exporter</span><br><span class="line">After=network-online.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">User=node_exporter</span><br><span class="line">Group=node_exporter</span><br><span class="line">Type=simple</span><br><span class="line">ExecStart=/usr/local/bin/node_exporter/node_exporter</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br><span class="line">EOF</span><br><span class="line"></span><br><span class="line">systemctl daemon-reload</span><br><span class="line">systemctl start node_exporter</span><br><span class="line">systemctl enable node_exporter</span><br></pre></td></tr></table></figure>
+
+<h3 id="Grafana"><a href="#Grafana" class="headerlink" title="Grafana"></a>Grafana</h3><blockquote>
+<p>启动后访问地址：ip:3000<br>初始用户名和密码都是admin</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo dnf install -y https://dl.grafana.com/enterprise/release/grafana-enterprise-11.2.0-1.x86_64.rpm</span><br></pre></td></tr></table></figure>
+
+<h4 id="所有的要添加的数据"><a href="#所有的要添加的数据" class="headerlink" title="所有的要添加的数据"></a>所有的要添加的数据</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># my global config</span><br><span class="line">global:</span><br><span class="line">  scrape_interval: 15s # Set the scrape interval to every 15 seconds. Default is every 1 minute.</span><br><span class="line">  evaluation_interval: 15s # Evaluate rules every 15 seconds. The default is every 1 minute.</span><br><span class="line">  # scrape_timeout is set to the global default (10s).</span><br><span class="line"></span><br><span class="line"># Alertmanager configuration</span><br><span class="line">alerting:</span><br><span class="line">  alertmanagers:</span><br><span class="line">    - static_configs:</span><br><span class="line">        - targets:</span><br><span class="line">           - alertmanager:9093</span><br><span class="line"></span><br><span class="line"># Load rules once and periodically evaluate them according to the global &#x27;evaluation_interval&#x27;.</span><br><span class="line">rule_files:</span><br><span class="line">  - alert.yml</span><br><span class="line">  # - &quot;first_rules.yml&quot;</span><br><span class="line">  # - &quot;second_rules.yml&quot;</span><br><span class="line"></span><br><span class="line"># A scrape configuration containing exactly one endpoint to scrape:</span><br><span class="line"># Here it&#x27;s Prometheus itself.</span><br><span class="line">scrape_configs:</span><br><span class="line">  # The job name is added as a label `job=&lt;job_name&gt;` to any timeseries scraped from this config.</span><br><span class="line">  - job_name: &quot;prometheus&quot;</span><br><span class="line">    static_configs:</span><br><span class="line">      - targets: [&quot;10.10.10.10:9090&quot;]</span><br><span class="line"></span><br><span class="line">    # metrics_path defaults to &#x27;/metrics&#x27;</span><br><span class="line">    # scheme defaults to &#x27;http&#x27;.</span><br><span class="line">  - job_name: &#x27;linux&#x27;</span><br><span class="line">    static_configs:</span><br><span class="line">    - targets: [&#x27;10.10.10.10:9100&#x27;,&#x27;10.10.10.40:9100&#x27;] # 多个用,分开</span><br></pre></td></tr></table></figure>
+
+<h4 id="添加-数据源"><a href="#添加-数据源" class="headerlink" title="添加 数据源"></a>添加 数据源</h4><p><img src="/./assets/image-20240919010609508.png" alt="image-20240919010609508"></p>
+<h4 id="node-exporter-呈现的结果"><a href="#node-exporter-呈现的结果" class="headerlink" title="node_exporter 呈现的结果"></a>node_exporter 呈现的结果</h4><p><img src="/./assets/image-20240919003415396.png" alt="image-20240919003415396"></p>
+<h4 id="添加dashboard"><a href="#添加dashboard" class="headerlink" title="添加dashboard"></a>添加dashboard</h4><p><a href="https://grafana.com/grafana/dashboards">https://grafana.com/grafana/dashboards</a> （node_export插件）</p>
+<p><img src="/./assets/image-20240919010221681.png" alt="image-20240919010221681"></p>
+<h4 id="导入dashboard—import"><a href="#导入dashboard—import" class="headerlink" title="导入dashboard—import"></a>导入dashboard—import</h4><p><img src="/./assets/image-20240919010304378.png" alt="image-20240919010304378"></p>
+<p><img src="/./assets/image-20240919010413201.png" alt="image-20240919010413201"></p>
+<p><img src="/./assets/image-20240919010514650.png" alt="image-20240919010514650"></p>
+<h3 id="Alertmanager"><a href="#Alertmanager" class="headerlink" title="Alertmanager"></a>Alertmanager</h3><blockquote>
+<p>端口 9093 STATUS</p>
+</blockquote>
+<h4 id="添加报警yml"><a href="#添加报警yml" class="headerlink" title="添加报警yml"></a>添加报警yml</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cat &gt; alert.yml &lt;&lt; EOF</span><br><span class="line">groups:</span><br><span class="line">  - name: example-alerts</span><br><span class="line">    rules:</span><br><span class="line">      - alert: InstanceDown</span><br><span class="line">        expr: up == 0</span><br><span class="line">        for: 5m</span><br><span class="line">        labels:</span><br><span class="line">          severity: critical</span><br><span class="line">        annotations:</span><br><span class="line">          summary: &quot;Instance &#123;&#123; $labels.instance &#125;&#125; down&quot;</span><br><span class="line">          description: &quot;&#123;&#123; $labels.instance &#125;&#125; of job &#123;&#123; $labels.job &#125;&#125; has been down for more than 5 minutes.&quot;</span><br><span class="line"></span><br><span class="line">      - alert: HighMemoryUsage</span><br><span class="line">        expr: 100 - (node_memory_MemFree_bytes + node_memory_Cached_bytes + node_memory_Buffers_bytes) / node_memory_MemTotal_bytes * 100 &gt; 90</span><br><span class="line">        for: 5m</span><br><span class="line">        labels:</span><br><span class="line">          severity: warning</span><br><span class="line">        annotations:</span><br><span class="line">          summary: &quot;High Memory Usage on &#123;&#123; $labels.instance &#125;&#125;&quot;</span><br><span class="line">          description: &quot;Memory usage on &#123;&#123; $labels.instance &#125;&#125; is above 90%.&quot;</span><br><span class="line"></span><br><span class="line">      - alert: HighCPUUsage</span><br><span class="line">        expr: 100 - avg by (instance) (rate(node_cpu_seconds_total&#123;mode=&quot;idle&quot;&#125;[5m])) * 100 &gt; 90</span><br><span class="line">        for: 5m</span><br><span class="line">        labels:</span><br><span class="line">          severity: warning</span><br><span class="line">        annotations:</span><br><span class="line">          summary: &quot;High CPU Usage on &#123;&#123; $labels.instance &#125;&#125;&quot;</span><br><span class="line">          description: &quot;CPU usage on &#123;&#123; $labels.instance &#125;&#125; is above 90%.&quot;</span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">tar xf alertmanager-0.27.0.linux-amd64.tar.gz</span><br><span class="line">mv alertmanager-0.27.0.linux-amd64 /usr/local/bin/alertmanager</span><br><span class="line">cat &gt; /etc/systemd/system/alertmanager.service &lt;&lt; EOF</span><br><span class="line">[Unit]</span><br><span class="line">Description=alertmanager Service</span><br><span class="line">After=network.target</span><br><span class="line">[Service]</span><br><span class="line">ExecStart=/usr/local/bin/alertmanager/alertmanager \</span><br><span class="line">--config.file=/usr/local/bin/alertmanager/alertmanager.yml </span><br><span class="line">Restart=on-failure</span><br><span class="line">User=prometheus</span><br><span class="line">Group=prometheus</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br><span class="line">EOF</span><br><span class="line"> </span><br><span class="line">chown -R prometheus:prometheus /usr/local/bin/alertmanager</span><br><span class="line">sudo systemctl daemon-reload</span><br><span class="line">sudo systemctl start alertmanager</span><br><span class="line">sudo systemctl enable alertmanager</span><br></pre></td></tr></table></figure>
+
+<p><img src="/./assets/image-20240919004819782.png" alt="image-20240919004819782"></p>
+<p><img src="/./assets/image-20240919005253643.png" alt="image-20240919005253643"></p>
+]]></content>
+      <categories>
+        <category>Operations</category>
+        <category>k8s</category>
+      </categories>
+      <tags>
+        <tag>k8s</tag>
+      </tags>
   </entry>
 </search>
