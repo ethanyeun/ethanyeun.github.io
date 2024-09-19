@@ -3,11 +3,11 @@
   <title>ethanblog</title>
   
   <subtitle>fighting</subtitle>
-  <link href="http://ethanyeun.github.io/atom.xml" rel="self"/>
+  <link href="http://ethanyeun.github.io/ethanyeun.github.io/atom.xml" rel="self"/>
   
-  <link href="http://ethanyeun.github.io/"/>
+  <link href="http://ethanyeun.github.io/ethanyeun.github.io/"/>
   <updated>2024-09-19T08:26:03.162Z</updated>
-  <id>http://ethanyeun.github.io/</id>
+  <id>http://ethanyeun.github.io/ethanyeun.github.io/</id>
   
   <author>
     <name>ethan</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Prometheus</title>
-    <link href="http://ethanyeun.github.io/2024/09/19/Prometheus/"/>
-    <id>http://ethanyeun.github.io/2024/09/19/Prometheus/</id>
+    <link href="http://ethanyeun.github.io/ethanyeun.github.io/2024/09/19/Prometheus/"/>
+    <id>http://ethanyeun.github.io/ethanyeun.github.io/2024/09/19/Prometheus/</id>
     <published>2024-09-19T08:26:03.000Z</published>
     <updated>2024-09-19T08:26:03.162Z</updated>
     
@@ -31,8 +31,8 @@
   
   <entry>
     <title>Prometheus binary</title>
-    <link href="http://ethanyeun.github.io/2024/09/18/Prometheus-binary/"/>
-    <id>http://ethanyeun.github.io/2024/09/18/Prometheus-binary/</id>
+    <link href="http://ethanyeun.github.io/ethanyeun.github.io/2024/09/18/Prometheus-binary/"/>
+    <id>http://ethanyeun.github.io/ethanyeun.github.io/2024/09/18/Prometheus-binary/</id>
     <published>2024-09-18T14:57:34.000Z</published>
     <updated>2024-09-19T09:07:40.133Z</updated>
     
@@ -45,19 +45,19 @@
     
     
     
-    <category term="Operations" scheme="http://ethanyeun.github.io/categories/Operations/"/>
+    <category term="Operations" scheme="http://ethanyeun.github.io/ethanyeun.github.io/categories/Operations/"/>
     
-    <category term="k8s" scheme="http://ethanyeun.github.io/categories/Operations/k8s/"/>
+    <category term="k8s" scheme="http://ethanyeun.github.io/ethanyeun.github.io/categories/Operations/k8s/"/>
     
     
-    <category term="k8s" scheme="http://ethanyeun.github.io/tags/k8s/"/>
+    <category term="k8s" scheme="http://ethanyeun.github.io/ethanyeun.github.io/tags/k8s/"/>
     
   </entry>
   
   <entry>
     <title>Daemonset</title>
-    <link href="http://ethanyeun.github.io/2024/09/09/Daemonset/"/>
-    <id>http://ethanyeun.github.io/2024/09/09/Daemonset/</id>
+    <link href="http://ethanyeun.github.io/ethanyeun.github.io/2024/09/09/Daemonset/"/>
+    <id>http://ethanyeun.github.io/ethanyeun.github.io/2024/09/09/Daemonset/</id>
     <published>2024-09-09T09:02:20.000Z</published>
     <updated>2024-09-09T09:02:20.808Z</updated>
     
@@ -69,8 +69,8 @@
   
   <entry>
     <title>StatefulSet</title>
-    <link href="http://ethanyeun.github.io/2024/09/06/StatefulSet/"/>
-    <id>http://ethanyeun.github.io/2024/09/06/StatefulSet/</id>
+    <link href="http://ethanyeun.github.io/ethanyeun.github.io/2024/09/06/StatefulSet/"/>
+    <id>http://ethanyeun.github.io/ethanyeun.github.io/2024/09/06/StatefulSet/</id>
     <published>2024-09-06T15:59:57.000Z</published>
     <updated>2024-09-09T09:01:19.845Z</updated>
     
@@ -92,8 +92,8 @@
   
   <entry>
     <title>Volume</title>
-    <link href="http://ethanyeun.github.io/2024/09/05/Volume/"/>
-    <id>http://ethanyeun.github.io/2024/09/05/Volume/</id>
+    <link href="http://ethanyeun.github.io/ethanyeun.github.io/2024/09/05/Volume/"/>
+    <id>http://ethanyeun.github.io/ethanyeun.github.io/2024/09/05/Volume/</id>
     <published>2024-09-05T08:40:17.000Z</published>
     <updated>2024-09-06T16:36:13.577Z</updated>
     
@@ -112,8 +112,8 @@
   
   <entry>
     <title>Deployment</title>
-    <link href="http://ethanyeun.github.io/2024/09/04/Deployment/"/>
-    <id>http://ethanyeun.github.io/2024/09/04/Deployment/</id>
+    <link href="http://ethanyeun.github.io/ethanyeun.github.io/2024/09/04/Deployment/"/>
+    <id>http://ethanyeun.github.io/ethanyeun.github.io/2024/09/04/Deployment/</id>
     <published>2024-09-04T15:39:10.000Z</published>
     <updated>2024-09-04T19:36:40.734Z</updated>
     
@@ -122,19 +122,19 @@
     
     
     
-    <category term="Operations" scheme="http://ethanyeun.github.io/categories/Operations/"/>
+    <category term="Operations" scheme="http://ethanyeun.github.io/ethanyeun.github.io/categories/Operations/"/>
     
-    <category term="k8s" scheme="http://ethanyeun.github.io/categories/Operations/k8s/"/>
+    <category term="k8s" scheme="http://ethanyeun.github.io/ethanyeun.github.io/categories/Operations/k8s/"/>
     
     
-    <category term="Controller" scheme="http://ethanyeun.github.io/tags/Controller/"/>
+    <category term="Controller" scheme="http://ethanyeun.github.io/ethanyeun.github.io/tags/Controller/"/>
     
   </entry>
   
   <entry>
     <title>Service(四层代理)</title>
-    <link href="http://ethanyeun.github.io/2024/09/03/Service/"/>
-    <id>http://ethanyeun.github.io/2024/09/03/Service/</id>
+    <link href="http://ethanyeun.github.io/ethanyeun.github.io/2024/09/03/Service/"/>
+    <id>http://ethanyeun.github.io/ethanyeun.github.io/2024/09/03/Service/</id>
     <published>2024-09-02T16:25:02.000Z</published>
     <updated>2024-09-04T15:38:52.850Z</updated>
     
@@ -143,19 +143,19 @@
     
     
     
-    <category term="Operations" scheme="http://ethanyeun.github.io/categories/Operations/"/>
+    <category term="Operations" scheme="http://ethanyeun.github.io/ethanyeun.github.io/categories/Operations/"/>
     
-    <category term="k8s" scheme="http://ethanyeun.github.io/categories/Operations/k8s/"/>
+    <category term="k8s" scheme="http://ethanyeun.github.io/ethanyeun.github.io/categories/Operations/k8s/"/>
     
     
-    <category term="object" scheme="http://ethanyeun.github.io/tags/object/"/>
+    <category term="object" scheme="http://ethanyeun.github.io/ethanyeun.github.io/tags/object/"/>
     
   </entry>
   
   <entry>
     <title>ReplicaSet（副本集合）</title>
-    <link href="http://ethanyeun.github.io/2024/09/02/ReplicaSet/"/>
-    <id>http://ethanyeun.github.io/2024/09/02/ReplicaSet/</id>
+    <link href="http://ethanyeun.github.io/ethanyeun.github.io/2024/09/02/ReplicaSet/"/>
+    <id>http://ethanyeun.github.io/ethanyeun.github.io/2024/09/02/ReplicaSet/</id>
     <published>2024-09-02T07:59:58.000Z</published>
     <updated>2024-09-04T15:22:36.655Z</updated>
     
@@ -170,19 +170,19 @@
     
     
     
-    <category term="Operations" scheme="http://ethanyeun.github.io/categories/Operations/"/>
+    <category term="Operations" scheme="http://ethanyeun.github.io/ethanyeun.github.io/categories/Operations/"/>
     
-    <category term="k8s" scheme="http://ethanyeun.github.io/categories/Operations/k8s/"/>
+    <category term="k8s" scheme="http://ethanyeun.github.io/ethanyeun.github.io/categories/Operations/k8s/"/>
     
     
-    <category term="Controller" scheme="http://ethanyeun.github.io/tags/Controller/"/>
+    <category term="Controller" scheme="http://ethanyeun.github.io/ethanyeun.github.io/tags/Controller/"/>
     
   </entry>
   
   <entry>
     <title>kubernetes补全</title>
-    <link href="http://ethanyeun.github.io/2024/08/29/bash-completion/"/>
-    <id>http://ethanyeun.github.io/2024/08/29/bash-completion/</id>
+    <link href="http://ethanyeun.github.io/ethanyeun.github.io/2024/08/29/bash-completion/"/>
+    <id>http://ethanyeun.github.io/ethanyeun.github.io/2024/08/29/bash-completion/</id>
     <published>2024-08-29T02:52:30.000Z</published>
     <updated>2024-09-02T08:01:42.397Z</updated>
     
@@ -191,19 +191,19 @@
     
     
     
-    <category term="Operations" scheme="http://ethanyeun.github.io/categories/Operations/"/>
+    <category term="Operations" scheme="http://ethanyeun.github.io/ethanyeun.github.io/categories/Operations/"/>
     
-    <category term="k8s" scheme="http://ethanyeun.github.io/categories/Operations/k8s/"/>
+    <category term="k8s" scheme="http://ethanyeun.github.io/ethanyeun.github.io/categories/Operations/k8s/"/>
     
     
-    <category term="k8s" scheme="http://ethanyeun.github.io/tags/k8s/"/>
+    <category term="k8s" scheme="http://ethanyeun.github.io/ethanyeun.github.io/tags/k8s/"/>
     
   </entry>
   
   <entry>
     <title>initcontainerds（初始化容器）</title>
-    <link href="http://ethanyeun.github.io/2024/08/29/initcontainers/"/>
-    <id>http://ethanyeun.github.io/2024/08/29/initcontainers/</id>
+    <link href="http://ethanyeun.github.io/ethanyeun.github.io/2024/08/29/initcontainers/"/>
+    <id>http://ethanyeun.github.io/ethanyeun.github.io/2024/08/29/initcontainers/</id>
     <published>2024-08-29T02:52:30.000Z</published>
     <updated>2024-09-02T08:01:47.178Z</updated>
     
@@ -212,19 +212,19 @@
     
     
     
-    <category term="Operations" scheme="http://ethanyeun.github.io/categories/Operations/"/>
+    <category term="Operations" scheme="http://ethanyeun.github.io/ethanyeun.github.io/categories/Operations/"/>
     
-    <category term="k8s" scheme="http://ethanyeun.github.io/categories/Operations/k8s/"/>
+    <category term="k8s" scheme="http://ethanyeun.github.io/ethanyeun.github.io/categories/Operations/k8s/"/>
     
     
-    <category term="k8s" scheme="http://ethanyeun.github.io/tags/k8s/"/>
+    <category term="k8s" scheme="http://ethanyeun.github.io/ethanyeun.github.io/tags/k8s/"/>
     
   </entry>
   
   <entry>
     <title>docker镜像导入k8s</title>
-    <link href="http://ethanyeun.github.io/2024/08/29/docker%E9%95%9C%E5%83%8F%E5%AF%BC%E5%85%A5k8s/"/>
-    <id>http://ethanyeun.github.io/2024/08/29/docker%E9%95%9C%E5%83%8F%E5%AF%BC%E5%85%A5k8s/</id>
+    <link href="http://ethanyeun.github.io/ethanyeun.github.io/2024/08/29/docker%E9%95%9C%E5%83%8F%E5%AF%BC%E5%85%A5k8s/"/>
+    <id>http://ethanyeun.github.io/ethanyeun.github.io/2024/08/29/docker%E9%95%9C%E5%83%8F%E5%AF%BC%E5%85%A5k8s/</id>
     <published>2024-08-29T02:52:30.000Z</published>
     <updated>2024-09-02T08:01:36.991Z</updated>
     
@@ -235,12 +235,12 @@
     
     
     
-    <category term="Operations" scheme="http://ethanyeun.github.io/categories/Operations/"/>
+    <category term="Operations" scheme="http://ethanyeun.github.io/ethanyeun.github.io/categories/Operations/"/>
     
-    <category term="k8s" scheme="http://ethanyeun.github.io/categories/Operations/k8s/"/>
+    <category term="k8s" scheme="http://ethanyeun.github.io/ethanyeun.github.io/categories/Operations/k8s/"/>
     
     
-    <category term="k8s" scheme="http://ethanyeun.github.io/tags/k8s/"/>
+    <category term="k8s" scheme="http://ethanyeun.github.io/ethanyeun.github.io/tags/k8s/"/>
     
   </entry>
   
