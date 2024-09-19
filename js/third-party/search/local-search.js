@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         return right.id - left.id;
       });
-
       const stats = CONFIG.i18n.hits.replace('${hits}', resultItems.length);
 
       container.innerHTML = `<div class="search-stats">${stats}</div>
