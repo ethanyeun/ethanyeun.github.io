@@ -423,4 +423,460 @@
         <tag>k8s</tag>
       </tags>
   </entry>
+  <entry>
+    <title></title>
+    <url>/2024/09/19/themes/next/README.cn/</url>
+    <content><![CDATA[<h1 align="center">本项目已停止维护。:warning:</h1>
+<h2 align="center">社区维护的版本请移步这里：<a href="https://github.com/theme-next/hexo-theme-next">NexT v6 and v7 :triangular_flag_on_post:</a></h2>
+
+<h1 align="center">NexT</h1>
+
+<p align="center">NexT 是一个高质量并且优雅的<a href="http://hexo.io">Hexo</a> 主题。这是精心制作做出来的 hexo 主题。</p>
+
+<p><a href="https://gitter.im/iissnan/hexo-theme-next?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Join the chat at https://gitter.im/iissnan/hexo-theme-next"></a><br><a href="https://github.com/iissnan/hexo-theme-next/commits/master"><img src="https://img.shields.io/maintenance/yes/2017.svg" alt="mnt-image"></a><br><a href="https://travis-ci.org/iissnan/hexo-theme-next?branch=master" title="Travis CI"><img src="https://travis-ci.org/iissnan/hexo-theme-next.svg?branch=master" alt="travis-image"></a><br><a href="https://github.com/iissnan/hexo-theme-next/releases"><img src="https://img.shields.io/github/release/iissnan/hexo-theme-next.svg" alt="rel-image"></a><br><a href="http://hexo.io/"><img src="https://img.shields.io/badge/hexo-%3E%3D%203.0-blue.svg" alt="hexo-image"></a><br><a href="LICENSE"><img src="https://img.shields.io/dub/l/vibe-d.svg" alt="lic-image"></a></p>
+<ul>
+<li><a href="http://theme-next.iissnan.com" target="_blank">NexT 使用文档</a> |  <a href="README.md">English Documentation</a></li>
+</ul>
+<h2 id="实时预览-Live-Preview"><a href="#实时预览-Live-Preview" class="headerlink" title="实时预览 Live Preview"></a>实时预览 Live Preview</h2><ul>
+<li>:heart_decoration: Muse 方案: <a href="https://leaferx.online/">LEAFERx</a> | <a href="https://notes.wanghao.work/">XiaMo</a> | <a href="https://oawan.me/">OAwan</a></li>
+<li>:six_pointed_star: Mist 方案: <a href="https://blog.zzbd.org/">Jeff</a> | <a href="http://uchuhimo.me/">uchuhimo</a> | <a href="http://www.ixirong.com/">xirong</a></li>
+<li>:pisces: Pisces 方案: <a href="http://notes.iissnan.com/">Vi</a> | <a href="https://acris.me/">Acris</a> | <a href="https://rainylog.com/">Rainy</a></li>
+<li>:gemini: Gemini 方案: <a href="https://almostover.ru/">Ivan.Nginx</a> | <a href="https://raincal.com/">Raincal</a> | <a href="https://dandyxu.me/">Dandy</a></li>
+</ul>
+<p>更多 NexT 例子点击 <a href="https://github.com/iissnan/hexo-theme-next/issues/119">这里</a>.</p>
+<h2 id="安装-Installation"><a href="#安装-Installation" class="headerlink" title="安装 Installation"></a>安装 Installation</h2><p><strong>1.</strong> 在终端切换到<strong>hexo 根</strong>目录. 在hexo目录下一定有 <code>node_modules</code>, <code>source</code>, <code>themes</code> 和其他文件夹:<br>   <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo</span><br><span class="line">$ <span class="built_in">ls</span></span><br><span class="line">_config.yml  node_modules  package.json  public  scaffolds  <span class="built_in">source</span>  themes</span><br></pre></td></tr></table></figure></p>
+<p><strong>2.</strong> 从 github 上获取主题 。这里有几种方式来获取主题:</p>
+<h3 id="下载最新发布的版本-Download-tagged-release-version"><a href="#下载最新发布的版本-Download-tagged-release-version" class="headerlink" title="下载最新发布的版本  Download tagged release version"></a>下载<a href="https://github.com/iissnan/hexo-theme-next/releases/latest">最新发布的版本</a>  Download tagged release version</h3><p>   在大多数情况下 <strong>稳定</strong>。 推荐用户下载这个。</p>
+<p>   <a href="http://lmgtfy.com/?q=linux+curl+tar+wget+install"><img src="https://img.shields.io/badge/install%20with%20-curl%20%7C%20tar%20%7C%20wget-blue.svg" alt="curl-tar-wget-image"></a></p>
+   <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">mkdir</span> themes/next</span><br><span class="line">$ curl -s https://api.github.com/repos/iissnan/hexo-theme-next/releases/latest | grep tarball_url | <span class="built_in">cut</span> -d <span class="string">&#x27;&quot;&#x27;</span> -f 4 | wget -i - -O- | tar -zx -C themes/next --strip-components=1</span><br></pre></td></tr></table></figure>
+
+<h3 id="下载标签发布版本-Download-tagged-release-version"><a href="#下载标签发布版本-Download-tagged-release-version" class="headerlink" title="下载标签发布版本  Download tagged release version"></a>下载<a href="https://github.com/iissnan/hexo-theme-next/releases">标签发布版本</a>  Download tagged release version</h3><p>   您必须定义版本。从<a href="https://github.com/iissnan/hexo-theme-next/tags">标签列表</a>里选择版本替换<code>v5.1.2</code>。</p>
+<p>   <a href="http://lmgtfy.com/?q=linux+curl+tar+install"><img src="https://img.shields.io/badge/install%20with%20-curl%20%7C%20tar-blue.svg" alt="curl-tar-image"></a></p>
+   <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">mkdir</span> themes/next</span><br><span class="line">$ curl -L https://api.github.com/repos/iissnan/hexo-theme-next/tarball/v5.1.2 | tar -zxv -C themes/next --strip-components=1</span><br></pre></td></tr></table></figure>
+
+<p>   <a href="http://lmgtfy.com/?q=linux+git+install"><img src="https://img.shields.io/badge/install%20with%20-git-blue.svg" alt="git-image"></a></p>
+   <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> --branch v5.1.2 https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+
+<h3 id="下载最新的-master-分支-Download-latest-master-branch"><a href="#下载最新的-master-分支-Download-latest-master-branch" class="headerlink" title="下载最新的 master 分支  Download latest master branch"></a>下载<a href="https://github.com/iissnan/hexo-theme-next/archive/master.zip">最新的 master 分支</a>  Download latest master branch</h3><p>  可能会 <strong>不稳定</strong>, 但是包含最新的特色，推荐开发者下载.</p>
+<p>   <a href="http://lmgtfy.com/?q=linux+curl+tar+install"><img src="https://img.shields.io/badge/install%20with%20-curl%20%7C%20tar-blue.svg" alt="curl-tar-image"></a></p>
+   <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">mkdir</span> themes/next</span><br><span class="line">$ curl -L https://api.github.com/repos/iissnan/hexo-theme-next/tarball | tar -zxv -C themes/next --strip-components=1</span><br></pre></td></tr></table></figure>
+
+<p>   <a href="http://lmgtfy.com/?q=linux+git+install"><img src="https://img.shields.io/badge/install%20with%20-git-blue.svg" alt="git-image"></a></p>
+   <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+
+<p>  使用克隆命令，你将得到<strong>整个存储库</strong>。而且在任何时候你都可以切换到任何标签发布版本。<br>  获取标签列表：</p>
+   <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> themes/next</span><br><span class="line">$ git tag -l</span><br><span class="line">…</span><br><span class="line">v5.0.0</span><br><span class="line">v5.0.1</span><br><span class="line">v5.1.0</span><br><span class="line">v5.1.1</span><br><span class="line">v5.1.2</span><br></pre></td></tr></table></figure>
+
+<p>   例如, 你想要切换到<code>v5.1.0</code> <a href="https://github.com/iissnan/hexo-theme-next/tags">标签发布版本</a>. 输入以下命令:</p>
+   <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ git checkout tags/v5.1.0</span><br><span class="line">Note: checking out <span class="string">&#x27;tags/v5.1.0&#x27;</span>.</span><br><span class="line">…</span><br><span class="line">HEAD now on 1f72f68... CSS: Remove global list-style setting of ul</span><br></pre></td></tr></table></figure>
+
+<p>   如果你想切换回 <a href="https://github.com/iissnan/hexo-theme-next/commits/master">master 分支</a>的话, 输入这个命令:</p>
+   <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ git checkout master</span><br></pre></td></tr></table></figure>
+
+<p><strong>3.</strong> 在 <strong>hexo 根目录下</strong> 的配置文件<code>_config.yml</code>里设置主题:</p>
+<pre><code>theme: next
+</code></pre>
+<h3 id="Bugs"><a href="#Bugs" class="headerlink" title="Bugs"></a>Bugs</h3><p>对于那些遇到 <strong>Error: Cannot find module ‘hexo-util’</strong> <a href="https://github.com/iissnan/hexo-theme-next/issues/1490">问题</a>的人, 请检查你的NPM 版本.</p>
+<ul>
+<li><code>版本 &gt; 3</code>: 如果仍然不行的话，请移除 <code>node_modules</code> 文件 然后重新安装，使用 <code>npm install</code>命令。</li>
+<li><code>版本 &lt; 3</code>: 请通过<code>npm install --save-dev hexo-util</code>命令添加<code>hexo-util</code>到你的站点包依赖里</li>
+</ul>
+<h2 id="更新-Update"><a href="#更新-Update" class="headerlink" title="更新 Update"></a>更新 Update</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> themes/next</span><br><span class="line">$ git pull</span><br></pre></td></tr></table></figure>
+
+<h3 id="Bugs-1"><a href="#Bugs-1" class="headerlink" title="Bugs"></a>Bugs</h3><blockquote>
+<p>提交您的更改或存储它们，然后才能合并。</p>
+</blockquote>
+<p>您必须提交，存储或放弃本地更改. 看 <a href="https://stackoverflow.com/a/15745424/5861495">here</a> 是如何做的。</p>
+<h3 id="使用Hexo-data-files-328-配置主题-Theme-configurations-using-Hexo-data-files-328"><a href="#使用Hexo-data-files-328-配置主题-Theme-configurations-using-Hexo-data-files-328" class="headerlink" title="使用Hexo data files(#328)配置主题  Theme configurations using Hexo data files #328"></a>使用Hexo data files(<a href="https://github.com/iissnan/hexo-theme-next/issues/328">#328</a>)配置主题  Theme configurations using Hexo data files #328</h3><p>目前升级 NexT 主题的时候并不是非常的流畅。若使用 <code>git pull</code> 的方式，很多时候可能会产生冲突；而下载新版本覆盖安装的方式又需要手动合并主题的 <code>_config.yml</code> 文件。</p>
+<p>在此修改之前， NexT 建议将配置分离，一部分在 站点的配置文件中，另外一部分在主题的配置文件中。将需要自定的选项放置在 站点配置文件中，从而脱离避免更新主题时可能遇到的麻烦。这种方式是可行，但是有一些缺点：</p>
+<ol>
+<li>配置分离成了两个部分</li>
+<li>用户可能会疑惑一些选项该放置在哪里比较合适</li>
+</ol>
+<p>为了解决这个问题， NexT 将会使用 Hexo 的 <a href="https://hexo.io/docs/data-files.html">Data Files</a> 。然而由于 Data Files 是在 Hexo 3 版本时引进的，所以要使用这个特性，需要 Hexo 的版本不低于 3。</p>
+<p>若你比较喜欢 Hexo 2.x 版本，可以继续使用原先的配置方式。 NexT 保持着向下兼容。</p>
+<h4 id="特性-Benefits"><a href="#特性-Benefits" class="headerlink" title="特性 Benefits"></a>特性 Benefits</h4><p>通过这个特性，你可以将所有的主题配置放置在站点的 <code>source/_data/next.yml</code> 文件中。原先放置在 站点配置文件 中的选项可以迁移到新的位置，同时，主题配置文件可以不用做任何修改。若后续版本有配置相关的改动时，你仅需在 <code>next.yml</code> 中做相应调整即可</p>
+<h4 id="如何使用这个特性-How-to-use-this-feature"><a href="#如何使用这个特性-How-to-use-this-feature" class="headerlink" title="如何使用这个特性 How to use this feature"></a>如何使用这个特性 How to use this feature</h4><ol>
+<li>请先确保你所使用的 Hexo 版本在 3 以上</li>
+<li>在站点的 <code>source/_data</code> 目录下新建 <code>next.yml</code> 文件（<code>_data</code>目录可能需要新建）</li>
+<li>迁移站点配置文件和主题配置文件中的配置到 <code>next.yml</code> 中</li>
+<li>使用 <code>--config source/_data/next.yml</code> 参数启动服务器, 生成或者部署。<br>   例如: <code>hexo clean --config source/_data/next.yml &amp;&amp; hexo g --config source/_data/next.yml</code>。</li>
+</ol>
+<h2 id="特色-Features"><a href="#特色-Features" class="headerlink" title="特色 Features"></a>特色 Features</h2><h3 id="支持多国语言-包括"><a href="#支持多国语言-包括" class="headerlink" title="支持多国语言, 包括:"></a>支持多国语言, 包括:</h3><p>:cn: 简体中文 &amp; 繁体中文<br><br>:us: 英语<br><br>:ru: 俄语<br><br>:fr: 法语<br><br>:de: 德语<br><br>:jp: 日语<br><br>:indonesia: 印度尼西亚语<br><br>:portugal: 葡萄牙语 (巴西)<br><br>:kr: 朝鲜语<br><br>:it: 意大利语<br><br>:netherlands: 荷兰语</p>
+<p>默认语言是英语。</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">language:</span> <span class="string">en</span></span><br><span class="line"><span class="comment"># language: zh-Hans</span></span><br><span class="line"><span class="comment"># language: zh-hk</span></span><br><span class="line"><span class="comment"># language: zh-tw</span></span><br><span class="line"><span class="comment"># language: ru</span></span><br><span class="line"><span class="comment"># language: fr-FR</span></span><br><span class="line"><span class="comment"># language: de</span></span><br><span class="line"><span class="comment"># language: ja</span></span><br><span class="line"><span class="comment"># language: id</span></span><br><span class="line"><span class="comment"># language: pt</span></span><br><span class="line"><span class="comment"># language: pt-BR</span></span><br><span class="line"><span class="comment"># language: ko</span></span><br><span class="line"><span class="comment"># language: it</span></span><br><span class="line"><span class="comment"># language: nl-NL</span></span><br></pre></td></tr></table></figure>
+
+<p>在站点配置文件<code>_config.yml</code>中可以将语言切换成中文</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">language:</span> <span class="string">zh-Hans</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="评论支持-Comment-support"><a href="#评论支持-Comment-support" class="headerlink" title="评论支持 Comment support"></a>评论支持 Comment support</h3><p>NexT 已经原生支持 <code>多说</code> and <code>Disqus</code> 评论系统。</p>
+<p>添加以下代码到你的主题配置文件 <code>_config.yml</code>:</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">duoshuo:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">shortname:</span> <span class="string">your-duoshuo-shortname</span></span><br></pre></td></tr></table></figure>
+
+<p>或者</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">disqus_shortname:</span> <span class="string">your-disqus-shortname</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="标签页-Tags-page"><a href="#标签页-Tags-page" class="headerlink" title="标签页 Tags page"></a>标签页 Tags page</h3><blockquote>
+<p>添加一个标签页面，里面包含您网站中的所有标签。</p>
+</blockquote>
+<ul>
+<li><p>创建一个名为 <code>tags</code> 页面</p>
+<pre><code>  hexo new page &quot;tags&quot;
+</code></pre>
+</li>
+<li><p>编辑标签页, 设置页面类型为<code>tags</code>.</p>
+<pre><code>  title: All tags
+  date: 2014-12-22 12:39:04
+  type: &quot;tags&quot;
+</code></pre>
+</li>
+<li><p>添加 <code>tags</code> 到主题配置文件 <code>_config.yml</code> 里:</p>
+<pre><code>  menu:
+    home: /
+    archives: /archives
+    tags: /tags
+</code></pre>
+</li>
+</ul>
+<h3 id="分类页-Categories-page"><a href="#分类页-Categories-page" class="headerlink" title="分类页 Categories page"></a>分类页 Categories page</h3><blockquote>
+<p>添加一个分类页面，里面包含您网站中的所有分类。</p>
+</blockquote>
+<ul>
+<li><p>创建一个名为 <code>categories</code> 页面</p>
+<pre><code>  hexo new page &quot;categories&quot;
+</code></pre>
+</li>
+<li><p>编辑分类页, 设置页面类型为 <code>categories</code>.</p>
+<pre><code>  title: All categories
+  date: 2014-12-22 12:39:04
+  type: &quot;categories&quot;
+</code></pre>
+</li>
+<li><p>添加 <code>categories</code> 到主题配置文件 <code>_config.yml</code> 里:</p>
+<pre><code>  menu:
+    home: /
+    archives: /archives
+    categories: /categories
+</code></pre>
+</li>
+</ul>
+<h3 id="社交媒体-Social-Media"><a href="#社交媒体-Social-Media" class="headerlink" title="社交媒体 Social Media"></a>社交媒体 Social Media</h3><p>NexT 可以自动添加链接到您的社交媒体帐户里:</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">social:</span></span><br><span class="line">  <span class="attr">GitHub:</span> <span class="string">your-github-url</span></span><br><span class="line">  <span class="attr">Twitter:</span> <span class="string">your-twitter-url</span></span><br><span class="line">  <span class="attr">Weibo:</span> <span class="string">your-weibo-url</span></span><br><span class="line">  <span class="attr">DouBan:</span> <span class="string">your-douban-url</span></span><br><span class="line">  <span class="attr">ZhiHu:</span> <span class="string">your-zhihu-url</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Feed-链接-Feed-link"><a href="#Feed-链接-Feed-link" class="headerlink" title="Feed 链接 Feed link"></a>Feed 链接 Feed link</h3><blockquote>
+<p>显示 feed 链接。</p>
+</blockquote>
+<p>在主题配置文件<code>_config.yml</code>里设置<code>rss</code> , 如下所示:</p>
+<ol>
+<li><code>rss: false</code> 会禁用 feed 链接。</li>
+<li><code>rss:  </code> 使用站点 feed 链接。这是默认的选项。</li>
+</ol>
+<p>    按照插件<a href="https://github.com/hexojs/hexo-generator-feed">hexo-generator-feed</a>的README中的安装说明进行操作。在完成这个插件的配置后，Feed链接也生成好了</p>
+<ol start="3">
+<li><code>rss: http://your-feed-url</code> 设置你的 feed 链接.</li>
+</ol>
+<h3 id="内置5种代码高亮主题-Up-to-5-code-highlight-themes-built-in"><a href="#内置5种代码高亮主题-Up-to-5-code-highlight-themes-built-in" class="headerlink" title="内置5种代码高亮主题 Up to 5 code highlight themes built-in"></a>内置5种代码高亮主题 Up to 5 code highlight themes built-in</h3><p>NexT 使用的是 <a href="https://github.com/chriskempson/tomorrow-theme">Tomorrow 主题</a> ，一共有5种主题供你选择。<br>Next 默认使用 <code>normal</code>. 下面是 <code>normal</code> 和 <code>night</code> 主题的预览:</p>
+<p><img src="http://iissnan.com/nexus/next/tomorrow-normal.png" alt="Tomorrow Normal Preview"><br><img src="http://iissnan.com/nexus/next/tomorrow-night.png" alt="Tomorrow Night Preview"></p>
+<p>查看更多信息点击<a href="https://github.com/chriskempson/tomorrow-theme">Tomorrow 主题</a>。</p>
+<h2 id="配置-Configuration"><a href="#配置-Configuration" class="headerlink" title="配置 Configuration"></a>配置 Configuration</h2><p>NexT 的配置很少</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># Menu configuration.</span></span><br><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/</span></span><br><span class="line">  <span class="attr">archives:</span> <span class="string">/archives</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Favicon</span></span><br><span class="line"><span class="attr">favicon:</span> <span class="string">/favicon.ico</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Avatar (put the image into next/source/images/)</span></span><br><span class="line"><span class="comment"># can be any image format supported by web browsers (JPEG,PNG,GIF,SVG,..)</span></span><br><span class="line"><span class="attr">avatar:</span> <span class="string">/default_avatar.png</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Code highlight theme</span></span><br><span class="line"><span class="comment"># available: normal | night | night eighties | night blue | night bright</span></span><br><span class="line"><span class="attr">highlight_theme:</span> <span class="string">normal</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Fancybox for image gallery</span></span><br><span class="line"><span class="attr">fancybox:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Specify the date when the site was setup</span></span><br><span class="line"><span class="attr">since:</span> <span class="number">2013</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="浏览器支持-Browser-support"><a href="#浏览器支持-Browser-support" class="headerlink" title="浏览器支持 Browser support"></a>浏览器支持 Browser support</h2><p><img src="http://iissnan.com/nexus/next/browser-support.png" alt="Browser support"></p>
+<p><a href="https://www.browserstack.com/"><img src="/2024/09/19/themes/next/README/browserstack_logo.png" alt="Browser Stack"></a></p>
+<blockquote>
+<p><strong>BrowserStack</strong> is a cloud-based cross-browser testing tool that enables developers to test their websites across various browsers on different operating systems and mobile devices, without requiring users to install virtual machines, devices or emulators.</p>
+</blockquote>
+<h2 id="贡献-Contributing"><a href="#贡献-Contributing" class="headerlink" title="贡献 Contributing"></a>贡献 Contributing</h2><p>接受各种形式的贡献，包括不限于提交问题与需求，修复代码。等待您的<code>Pull Request</code>。</p>
+<p>Any types of contribution are welcome. Thanks.</p>
+<p>**ATTENTION! Contributors on Chinese docs needed!**<br>Need to translate from <a href="README.md">English docs</a> to Chinese docs.<br>Any help wanted!<br>Thank’s a lot!</p>
+<h2 id="开发-Development"><a href="#开发-Development" class="headerlink" title="开发 Development"></a>开发 Development</h2><p>NexT 主旨在于简洁优雅且易于使用，所以首先要尽量确保 NexT 的简洁易用性。</p>
+<p>NexT is built for easily use with elegant appearance. First things first, always keep things simple.</p>
+<h2 id="开发历史-Changelog"><a href="#开发历史-Changelog" class="headerlink" title="开发历史 Changelog"></a><a href="https://github.com/iissnan/hexo-theme-next/wiki/Changelog">开发历史 Changelog</a></h2><!--[lic-image]: https://img.shields.io/npm/l/hexo-theme-next.svg-->
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2024/09/19/themes/next/source/lib/jquery_lazyload/README/</url>
+    <content><![CDATA[<h1 id="Lazy-Load-Plugin-for-jQuery"><a href="#Lazy-Load-Plugin-for-jQuery" class="headerlink" title="Lazy Load Plugin for jQuery"></a>Lazy Load Plugin for jQuery</h1><p>Lazy Load delays loading of images in long web pages. Images outside of viewport wont be loaded before user scrolls to them. This is opposite of image preloading.</p>
+<p>Using Lazy Load on long web pages containing many large images makes the page load faster. Browser will be in ready state after loading visible images. In some cases it can also help to reduce server load.</p>
+<p>Lazy Load is inspired by <a href="http://developer.yahoo.com/yui/imageloader/">YUI ImageLoader</a> Utility by Matt Mlinac.</p>
+<h2 id="How-to-Use"><a href="#How-to-Use" class="headerlink" title="How to Use?"></a>How to Use?</h2><p>Lazy Load depends on jQuery. Include them both in end of your HTML code:</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;jquery.js&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;jquery.lazyload.js&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>You must alter your HTML code. URL of the real image must be put into data-original attribute. It is good idea to give Lazy Loaded image a specific class. This way you can easily control which images plugin is binded to. Note that you should have width and height attributes in your image tag.</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">class</span>=<span class="string">&quot;lazy&quot;</span> <span class="attr">data-original</span>=<span class="string">&quot;img/example.jpg&quot;</span> <span class="attr">width</span>=<span class="string">&quot;640&quot;</span> <span class="attr">height</span>=<span class="string">&quot;480&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>then in your code do:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$(<span class="string">&quot;img.lazy&quot;</span>).<span class="title function_">lazyload</span>();</span><br></pre></td></tr></table></figure>
+
+<p>This causes all images of class lazy to be lazy loaded.</p>
+<p>More information on <a href="http://www.appelsiini.net/projects/lazyload">Lazy Load</a> project page.</p>
+<h2 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h2><p>You can install with <a href="http://bower.io/">bower</a> or <a href="https://www.npmjs.com/">npm</a>.</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ bower install jquery.lazyload</span><br><span class="line">$ npm install jquery-lazyload</span><br></pre></td></tr></table></figure>
+
+
+<h1 id="License"><a href="#License" class="headerlink" title="License"></a>License</h1><p>All code licensed under the <a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a>. All images licensed under <a href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>. In other words you are basically free to do whatever you want. Just don’t remove my name from the source.</p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2024/09/19/themes/next/source/lib/jquery_lazyload/CONTRIBUTING/</url>
+    <content><![CDATA[<h1 id="Contributing-to-Lazy-Load"><a href="#Contributing-to-Lazy-Load" class="headerlink" title="Contributing to Lazy Load"></a>Contributing to Lazy Load</h1><h2 id="Only-one-feature-or-change-per-pull-request"><a href="#Only-one-feature-or-change-per-pull-request" class="headerlink" title="Only one feature or change per pull request"></a>Only one feature or change per pull request</h2><p>Make pull requests only one feature or change at the time. For example you have fixed a bug. You also have optimized some code. Optimization is not related to a bug. These should be submitted as separate pull requests. This way I can easily choose what to include. It is also easier to understand the code changes. Commit messages should be descriptive and full sentences.</p>
+<p>Do not commit minified versions. Do not touch the version number. Make the pull requests against <a href="https://github.com/tuupola/jquery_lazyload/commits/1.9.x">1.9.x branch</a>.</p>
+<h2 id="Write-meaningful-commit-messages"><a href="#Write-meaningful-commit-messages" class="headerlink" title="Write meaningful commit messages"></a>Write meaningful commit messages</h2><p>Proper commit message is full sentence. It starts with capital letter but does not end with period. Headlines do not end with period. The GitHub default <code>Update filename.js</code> is not enough. When needed include also longer explanation what the commit does.</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Capitalized, short (50 chars or less) summary</span><br><span class="line"></span><br><span class="line">More detailed explanatory text, if necessary.  Wrap it to about 72</span><br><span class="line">characters or so.  In some contexts, the first line is treated as the</span><br><span class="line">subject of an email and the rest of the text as the body.  The blank</span><br><span class="line">line separating the summary from the body is critical (unless you omit</span><br><span class="line">the body entirely); tools like rebase can get confused if you run the</span><br><span class="line">two together.</span><br></pre></td></tr></table></figure>
+
+<p>When in doubt see Tim Pope’s blogpost <a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">A Note About Git Commit Messages</a></p>
+<h2 id="Follow-the-existing-coding-standards"><a href="#Follow-the-existing-coding-standards" class="headerlink" title="Follow the existing coding standards"></a>Follow the existing coding standards</h2><p>When contributing to open source project it is polite to follow the original authors coding standars. They might be different than yours. It is not a holy war. Just follow then original.</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> snake_case = <span class="string">&quot;something&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">camelCase</span>(<span class="params">options</span>) &#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (<span class="literal">true</span> !== <span class="literal">false</span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;here be dragons&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2024/09/19/themes/next/source/lib/fastclick/README/</url>
+    <content><![CDATA[<h1 id="FastClick"><a href="#FastClick" class="headerlink" title="FastClick"></a>FastClick</h1><p>FastClick is a simple, easy-to-use library for eliminating the 300ms delay between a physical tap and the firing of a <code>click</code> event on mobile browsers. The aim is to make your application feel less laggy and more responsive while avoiding any interference with your current logic.</p>
+<p>FastClick is developed by <a href="http://labs.ft.com/">FT Labs</a>, part of the Financial Times.</p>
+<p><a href="http://maxime.sh/2013/02/supprimer-le-lag-des-clics-sur-mobile-avec-fastclick/">Explication en français</a>.</p>
+<p><a href="https://developer.mozilla.org/ja/docs/Mozilla/Firefox_OS/Apps/Tips_and_techniques#Make_events_immediate">日本語で説明</a>。</p>
+<h2 id="Why-does-the-delay-exist"><a href="#Why-does-the-delay-exist" class="headerlink" title="Why does the delay exist?"></a>Why does the delay exist?</h2><p>According to <a href="https://developers.google.com/mobile/articles/fast_buttons">Google</a>:</p>
+<blockquote>
+<p>…mobile browsers will wait approximately 300ms from the time that you tap the button to fire the click event. The reason for this is that the browser is waiting to see if you are actually performing a double tap.</p>
+</blockquote>
+<h2 id="Compatibility"><a href="#Compatibility" class="headerlink" title="Compatibility"></a>Compatibility</h2><p>The library has been deployed as part of the <a href="http://app.ft.com/">FT Web App</a> and is tried and tested on the following mobile browsers:</p>
+<ul>
+<li>Mobile Safari on iOS 3 and upwards</li>
+<li>Chrome on iOS 5 and upwards</li>
+<li>Chrome on Android (ICS)</li>
+<li>Opera Mobile 11.5 and upwards</li>
+<li>Android Browser since Android 2</li>
+<li>PlayBook OS 1 and upwards</li>
+</ul>
+<h2 id="When-it-isn’t-needed"><a href="#When-it-isn’t-needed" class="headerlink" title="When it isn’t needed"></a>When it isn’t needed</h2><p>FastClick doesn’t attach any listeners on desktop browsers.</p>
+<p>Chrome 32+ on Android with <code>width=device-width</code> in the <a href="https://developer.mozilla.org/en-US/docs/Mobile/Viewport_meta_tag">viewport meta tag</a> doesn’t have a 300ms delay, therefore listeners aren’t attached.</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>Same goes for Chrome on Android (all versions) with <code>user-scalable=no</code> in the viewport meta tag. But be aware that <code>user-scalable=no</code> also disables pinch zooming, which may be an accessibility concern.</p>
+<p>For IE11+, you can use <code>touch-action: manipulation;</code> to disable double-tap-to-zoom on certain elements (like links and buttons).  For IE10 use <code>-ms-touch-action: manipulation</code>.</p>
+<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><p>Include fastclick.js in your JavaScript bundle or add it to your HTML page like this:</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&#x27;application/javascript&#x27;</span> <span class="attr">src</span>=<span class="string">&#x27;/path/to/fastclick.js&#x27;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>The script must be loaded prior to instantiating FastClick on any element of the page.</p>
+<p>To instantiate FastClick on the <code>body</code>, which is the recommended method of use:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> (<span class="string">&#x27;addEventListener&#x27;</span> <span class="keyword">in</span> <span class="variable language_">document</span>) &#123;</span><br><span class="line">	<span class="variable language_">document</span>.<span class="title function_">addEventListener</span>(<span class="string">&#x27;DOMContentLoaded&#x27;</span>, <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">		<span class="title class_">FastClick</span>.<span class="title function_">attach</span>(<span class="variable language_">document</span>.<span class="property">body</span>);</span><br><span class="line">	&#125;, <span class="literal">false</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Or, if you’re using jQuery:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">$(<span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">	<span class="title class_">FastClick</span>.<span class="title function_">attach</span>(<span class="variable language_">document</span>.<span class="property">body</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>If you’re using Browserify or another CommonJS-style module system, the <code>FastClick.attach</code> function will be returned when you call <code>require(&#39;fastclick&#39;)</code>. As a result, the easiest way to use FastClick with these loaders is as follows:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> attachFastClick = <span class="built_in">require</span>(<span class="string">&#x27;fastclick&#x27;</span>);</span><br><span class="line"><span class="title function_">attachFastClick</span>(<span class="variable language_">document</span>.<span class="property">body</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="Minified"><a href="#Minified" class="headerlink" title="Minified"></a>Minified</h3><p>Run <code>make</code> to build a minified version of FastClick using the Closure Compiler REST API. The minified file is saved to <code>build/fastclick.min.js</code> or you can <a href="http://build.origami.ft.com/bundles/js?modules=fastclick">download a pre-minified version</a>.</p>
+<p>Note: the pre-minified version is built using <a href="http://origami.ft.com/docs/developer-guide/build-service/">our build service</a> which exposes the <code>FastClick</code> object through <code>Origami.fastclick</code> and will have the Browserify&#x2F;CommonJS API (see above).</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> attachFastClick = <span class="title class_">Origami</span>.<span class="property">fastclick</span>;</span><br><span class="line"><span class="title function_">attachFastClick</span>(<span class="variable language_">document</span>.<span class="property">body</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="AMD"><a href="#AMD" class="headerlink" title="AMD"></a>AMD</h3><p>FastClick has AMD (Asynchronous Module Definition) support. This allows it to be lazy-loaded with an AMD loader, such as <a href="http://requirejs.org/">RequireJS</a>. Note that when using the AMD style require, the full <code>FastClick</code> object will be returned, <em>not</em> <code>FastClick.attach</code></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> <span class="title class_">FastClick</span> = <span class="built_in">require</span>(<span class="string">&#x27;fastclick&#x27;</span>);</span><br><span class="line"><span class="title class_">FastClick</span>.<span class="title function_">attach</span>(<span class="variable language_">document</span>.<span class="property">body</span>, options);</span><br></pre></td></tr></table></figure>
+
+<h3 id="Package-managers"><a href="#Package-managers" class="headerlink" title="Package managers"></a>Package managers</h3><p>You can install FastClick using <a href="https://github.com/component/component">Component</a>, <a href="https://npmjs.org/package/fastclick">npm</a> or <a href="http://bower.io/">Bower</a>.</p>
+<p>For Ruby, there’s a third-party gem called <a href="http://rubygems.org/gems/fastclick-rails">fastclick-rails</a>. For .NET there’s a <a href="http://nuget.org/packages/FastClick">NuGet package</a>.</p>
+<h2 id="Advanced"><a href="#Advanced" class="headerlink" title="Advanced"></a>Advanced</h2><h3 id="Ignore-certain-elements-with-needsclick"><a href="#Ignore-certain-elements-with-needsclick" class="headerlink" title="Ignore certain elements with needsclick"></a>Ignore certain elements with <code>needsclick</code></h3><p>Sometimes you need FastClick to ignore certain elements. You can do this easily by adding the <code>needsclick</code> class.</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">&quot;needsclick&quot;</span>&gt;</span>Ignored by FastClick<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Use-case-1-non-synthetic-click-required"><a href="#Use-case-1-non-synthetic-click-required" class="headerlink" title="Use case 1: non-synthetic click required"></a>Use case 1: non-synthetic click required</h4><p>Internally, FastClick uses <code>document.createEvent</code> to fire a synthetic <code>click</code> event as soon as <code>touchend</code> is fired by the browser. It then suppresses the additional <code>click</code> event created by the browser after that. In some cases, the non-synthetic <code>click</code> event created by the browser is required, as described in the <a href="http://ftlabs.github.com/fastclick/examples/focus.html">triggering focus example</a>.</p>
+<p>This is where the <code>needsclick</code> class comes in. Add the class to any element that requires a non-synthetic click.</p>
+<h4 id="Use-case-2-Twitter-Bootstrap-2-2-2-dropdowns"><a href="#Use-case-2-Twitter-Bootstrap-2-2-2-dropdowns" class="headerlink" title="Use case 2: Twitter Bootstrap 2.2.2 dropdowns"></a>Use case 2: Twitter Bootstrap 2.2.2 dropdowns</h4><p>Another example of when to use the <code>needsclick</code> class is with dropdowns in Twitter Bootstrap 2.2.2. Bootstrap add its own <code>touchstart</code> listener for dropdowns, so you want to tell FastClick to ignore those. If you don’t, touch devices will automatically close the dropdown as soon as it is clicked, because both FastClick and Bootstrap execute the synthetic click, one opens the dropdown, the second closes it immediately after.</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">&quot;dropdown-toggle needsclick&quot;</span> <span class="attr">data-toggle</span>=<span class="string">&quot;dropdown&quot;</span>&gt;</span>Dropdown<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h2><p>FastClick is designed to cope with many different browser oddities. Here are some examples to illustrate this:</p>
+<ul>
+<li><a href="http://ftlabs.github.com/fastclick/examples/layer.html">basic use</a> showing the increase in perceived responsiveness</li>
+<li><a href="http://ftlabs.github.com/fastclick/examples/focus.html">triggering focus</a> on an input element from a <code>click</code> handler</li>
+<li><a href="http://ftlabs.github.com/fastclick/examples/input.html">input element</a> which never receives clicks but gets fast focus</li>
+</ul>
+<h2 id="Tests"><a href="#Tests" class="headerlink" title="Tests"></a>Tests</h2><p>There are no automated tests. The files in <code>tests/</code> are manual reduced test cases. We’ve had a think about how best to test these cases, but they tend to be very browser&#x2F;device specific and sometimes subjective which means it’s not so trivial to test.</p>
+<h2 id="Credits-and-collaboration"><a href="#Credits-and-collaboration" class="headerlink" title="Credits and collaboration"></a>Credits and collaboration</h2><p>FastClick is maintained by <a href="http://twitter.com/rowanbeentje">Rowan Beentje</a>, <a href="http://twitter.com/mcaruanagalizia">Matthew Caruana Galizia</a> and <a href="http://twitter.com/andrewsmatt">Matthew Andrews</a> at <a href="http://labs.ft.com/">FT Labs</a>. All open source code released by FT Labs is licenced under the MIT licence. We welcome comments, feedback and suggestions.  Please feel free to raise an issue or pull request.</p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2024/09/19/themes/next/README/</url>
+    <content><![CDATA[<h1 align="center">This repository is no longer maintained! :warning:</h1>
+<h2 align="center">The community-maintained version is here: <a href="https://github.com/theme-next/hexo-theme-next">NexT v6 and v7 :triangular_flag_on_post:</a></h2>
+
+<h1 align="center">NexT</h1>
+
+<p align="center">NexT is a high quality elegant <a href="http://hexo.io">Hexo</a> theme. It is crafted from scratch, with love.</p>
+
+<p><a href="https://gitter.im/iissnan/hexo-theme-next?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="gitter-image"></a><br><a href="https://github.com/theme-next/hexo-theme-next"><img src="https://img.shields.io/maintenance/yes/2017.svg" alt="mnt-image"></a><br><a href="https://travis-ci.org/iissnan/hexo-theme-next?branch=master" title="Travis CI"><img src="https://travis-ci.org/iissnan/hexo-theme-next.svg?branch=master" alt="travis-image"></a><br><a href="https://github.com/iissnan/hexo-theme-next/releases"><img src="https://img.shields.io/github/release/iissnan/hexo-theme-next.svg" alt="rel-image"></a><br><a href="http://hexo.io/"><img src="https://img.shields.io/badge/hexo-%3E%3D%203.0-blue.svg" alt="hexo-image"></a><br><a href="LICENSE"><img src="https://img.shields.io/dub/l/vibe-d.svg" alt="lic-image"></a></p>
+<ul>
+<li><a href="README.cn.md">Chinese Documentation</a></li>
+</ul>
+<h2 id="Live-Preview"><a href="#Live-Preview" class="headerlink" title="Live Preview"></a>Live Preview</h2><ul>
+<li>:heart_decoration: Muse scheme: <a href="https://leaferx.online/">LEAFERx</a> | <a href="https://notes.wanghao.work/">XiaMo</a> | <a href="https://oawan.me/">OAwan</a></li>
+<li>:six_pointed_star: Mist scheme: <a href="https://blog.zzbd.org/">Jeff</a> | <a href="http://uchuhimo.me/">uchuhimo</a> | <a href="http://www.ixirong.com/">xirong</a></li>
+<li>:pisces: Pisces scheme: <a href="http://notes.iissnan.com/">Vi</a> | <a href="https://acris.me/">Acris</a> | <a href="https://rainylog.com/">Rainy</a></li>
+<li>:gemini: Gemini scheme: <a href="https://almostover.ru/">Ivan.Nginx</a> | <a href="https://raincal.com/">Raincal</a> | <a href="https://dandyxu.me/">Dandy</a></li>
+</ul>
+<p>More NexT examples <a href="https://github.com/iissnan/hexo-theme-next/issues/119">here</a>.</p>
+<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><p><strong>1.</strong> Change dir to <strong>hexo root</strong> directory. There must be <code>node_modules</code>, <code>source</code>, <code>themes</code> and other directories:<br>   <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo</span><br><span class="line">$ <span class="built_in">ls</span></span><br><span class="line">_config.yml  node_modules  package.json  public  scaffolds  <span class="built_in">source</span>  themes</span><br></pre></td></tr></table></figure></p>
+<p><strong>2.</strong> Get theme from GitHub. There are several variants to do it:</p>
+<h3 id="Download-latest-release-version"><a href="#Download-latest-release-version" class="headerlink" title="Download latest release version."></a>Download <a href="https://github.com/iissnan/hexo-theme-next/releases/latest">latest release version</a>.</h3><p>   At most cases <strong>stable</strong>. Recommended for most users.</p>
+<p>   <a href="http://lmgtfy.com/?q=linux+curl+tar+wget+install"><img src="https://img.shields.io/badge/install%20with%20-curl%20%7C%20tar%20%7C%20wget-blue.svg" alt="curl-tar-wget-image"></a></p>
+   <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">mkdir</span> themes/next</span><br><span class="line">$ curl -s https://api.github.com/repos/iissnan/hexo-theme-next/releases/latest | grep tarball_url | <span class="built_in">cut</span> -d <span class="string">&#x27;&quot;&#x27;</span> -f 4 | wget -i - -O- | tar -zx -C themes/next --strip-components=1</span><br></pre></td></tr></table></figure>
+
+<h3 id="Download-tagged-release-version"><a href="#Download-tagged-release-version" class="headerlink" title="Download tagged release version."></a>Download <a href="https://github.com/iissnan/hexo-theme-next/releases">tagged release version</a>.</h3><p>   You must define version. Replace <code>v5.1.2</code> with any version from <a href="https://github.com/iissnan/hexo-theme-next/tags">tags list</a>.</p>
+<p>   <a href="http://lmgtfy.com/?q=linux+curl+tar+install"><img src="https://img.shields.io/badge/install%20with%20-curl%20%7C%20tar-blue.svg" alt="curl-tar-image"></a></p>
+   <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">mkdir</span> themes/next</span><br><span class="line">$ curl -L https://api.github.com/repos/iissnan/hexo-theme-next/tarball/v5.1.2 | tar -zxv -C themes/next --strip-components=1</span><br></pre></td></tr></table></figure>
+
+<p>   <a href="http://lmgtfy.com/?q=linux+git+install"><img src="https://img.shields.io/badge/install%20with%20-git-blue.svg" alt="git-image"></a></p>
+   <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> --branch v5.1.2 https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+
+<h3 id="Download-latest-master-branch"><a href="#Download-latest-master-branch" class="headerlink" title="Download latest master branch."></a>Download <a href="https://github.com/iissnan/hexo-theme-next/archive/master.zip">latest master branch</a>.</h3><p>   May be <strong>unstable</strong>, but includes latest features. Recommended for developers.</p>
+<p>   <a href="http://lmgtfy.com/?q=linux+curl+tar+install"><img src="https://img.shields.io/badge/install%20with%20-curl%20%7C%20tar-blue.svg" alt="curl-tar-image"></a></p>
+   <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">mkdir</span> themes/next</span><br><span class="line">$ curl -L https://api.github.com/repos/iissnan/hexo-theme-next/tarball | tar -zxv -C themes/next --strip-components=1</span><br></pre></td></tr></table></figure>
+
+<p>   <a href="http://lmgtfy.com/?q=linux+git+install"><img src="https://img.shields.io/badge/install%20with%20-git-blue.svg" alt="git-image"></a></p>
+   <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+
+<p>   Clone command will give you the <strong>whole repository</strong>. And in any time you can switch to any tagged release.<br>   Get tags list:</p>
+   <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> themes/next</span><br><span class="line">$ git tag -l</span><br><span class="line">…</span><br><span class="line">v5.0.0</span><br><span class="line">v5.0.1</span><br><span class="line">v5.1.0</span><br><span class="line">v5.1.1</span><br><span class="line">v5.1.2</span><br></pre></td></tr></table></figure>
+
+<p>   For example, you want to switch on <code>v5.1.0</code> <a href="https://github.com/iissnan/hexo-theme-next/tags">tagged release version</a>. Input the following command:</p>
+   <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ git checkout tags/v5.1.0</span><br><span class="line">Note: checking out <span class="string">&#x27;tags/v5.1.0&#x27;</span>.</span><br><span class="line">…</span><br><span class="line">HEAD now on 1f72f68... CSS: Remove global list-style setting of ul</span><br></pre></td></tr></table></figure>
+
+<p>   And if you want to switch back on <a href="https://github.com/iissnan/hexo-theme-next/commits/master">master branch</a>, input this command:</p>
+   <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ git checkout master</span><br></pre></td></tr></table></figure>
+
+<p><strong>3.</strong> Set theme in main <strong>hexo root config</strong> <code>_config.yml</code> file:</p>
+<pre><code>theme: next
+</code></pre>
+<h3 id="Bugs"><a href="#Bugs" class="headerlink" title="Bugs"></a>Bugs</h3><p>For those who also encounter <strong>Error: Cannot find module ‘hexo-util’</strong> <a href="https://github.com/iissnan/hexo-theme-next/issues/1490">issue</a>, please check your NPM version.</p>
+<ul>
+<li><code>&gt; 3</code>: Still not work. Please remove <code>node_modules</code> directory and reinstall using <code>npm install</code>.</li>
+<li><code>&lt; 3</code>: Please add <code>hexo-util</code> explicitly via <code>npm install --save-dev hexo-util</code> to you site package deps.</li>
+</ul>
+<h2 id="Update"><a href="#Update" class="headerlink" title="Update"></a>Update</h2><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> themes/next</span><br><span class="line">$ git pull</span><br></pre></td></tr></table></figure>
+
+<h3 id="Bugs-1"><a href="#Bugs-1" class="headerlink" title="Bugs"></a>Bugs</h3><blockquote>
+<p>Commit your changes or stash them before you can merge</p>
+</blockquote>
+<p>You must Commit, Stash or Discard local changes. See <a href="https://stackoverflow.com/a/15745424/5861495">here</a> how to do it.</p>
+<h3 id="Theme-configurations-using-Hexo-data-files-328"><a href="#Theme-configurations-using-Hexo-data-files-328" class="headerlink" title="Theme configurations using Hexo data files (#328)"></a>Theme configurations using Hexo data files (<a href="https://github.com/iissnan/hexo-theme-next/issues/328">#328</a>)</h3><p>Currently, it is not smooth to update NexT theme from pulling or downloading new releases. It is quite often running into conflict status when updating NexT theme via <code>git pull</code>, or need to merge configurations manually when upgrading to new releases.</p>
+<p> At present, NexT encourages users to store some options in site’s <code>_config.yml</code> and other options in theme’s <code>_config.yml</code>. This approach is applicable, but has some drawbacks:</p>
+<ol>
+<li>Configurations are splited into two pieces</li>
+<li>Users maybe confuse which place should be for options</li>
+</ol>
+<p>In order to resolve this issue, NexT will take advantage of Hexo <a href="https://hexo.io/docs/data-files.html">Data files</a>. Because Data files is introduced in Hexo 3, so you need upgrade Hexo to 3.0 (or above) to use this feature.</p>
+<p>If you prefer Hexo 2.x, you can still use the old approach for configurations. NexT is still compatible with Hexo 2.x.</p>
+<h4 id="Benefits"><a href="#Benefits" class="headerlink" title="Benefits"></a>Benefits</h4><p>With this feature, now you can put all your configurations into one place (<code>source/_data/next.yml</code>), you don’t need to touch <code>next/_config.yml</code>. If there are any new options in new releases, you just need to copy those options from <code>next/_config.yml</code>, paste into <code>_data/next.yml</code> and set their values to whatever you want.</p>
+<h4 id="How-to-use-this-feature"><a href="#How-to-use-this-feature" class="headerlink" title="How to use this feature"></a>How to use this feature</h4><ol>
+<li>Please ensure you are using Hexo 3 (or above)</li>
+<li>Create an file named <code>next.yml</code> in site’s <code>source/_data</code> directory (create <code>_data</code> directory if it did not exist)</li>
+<li>Copy NexT theme options both in site’s <code>_config.yml</code> and theme’s <code>_config.yml</code> into <code>next.yml</code>.</li>
+<li>Use <code>--config source/_data/next.yml</code> parameter to start server, generate or deploy.<br>For example: <code>hexo clean --config source/_data/next.yml &amp;&amp; hexo g --config source/_data/next.yml</code>.</li>
+</ol>
+<h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><h3 id="Multiple-languages-support-including"><a href="#Multiple-languages-support-including" class="headerlink" title="Multiple languages support, including:"></a>Multiple languages support, including:</h3><p>:cn: Simplified Chinese &amp; Traditional Chinese.<br><br>:us: English<br><br>:ru: Russian<br><br>:fr: French<br><br>:de: German<br><br>:jp: Japanese<br><br>:indonesia: Indonesian<br><br>:portugal: Portuguese (Brazil)<br><br>:kr: Korean<br><br>:it: Italian<br><br>:netherlands: Dutch<br><br>:vietnam: Vietnamese</p>
+<p>Default language is English.</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">language:</span> <span class="string">en</span></span><br><span class="line"><span class="comment"># language: zh-Hans</span></span><br><span class="line"><span class="comment"># language: zh-hk</span></span><br><span class="line"><span class="comment"># language: zh-tw</span></span><br><span class="line"><span class="comment"># language: ru</span></span><br><span class="line"><span class="comment"># language: fr-FR</span></span><br><span class="line"><span class="comment"># language: de</span></span><br><span class="line"><span class="comment"># language: ja</span></span><br><span class="line"><span class="comment"># language: id</span></span><br><span class="line"><span class="comment"># language: pt</span></span><br><span class="line"><span class="comment"># language: pt-BR</span></span><br><span class="line"><span class="comment"># language: ko</span></span><br><span class="line"><span class="comment"># language: it</span></span><br><span class="line"><span class="comment"># language: nl-NL</span></span><br><span class="line"><span class="comment"># language: vi</span></span><br></pre></td></tr></table></figure>
+
+<p>Set <code>language</code> field as following in site <code>_config.yml</code> to change to Chinese.</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">language:</span> <span class="string">zh-Hans</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Comment-support"><a href="#Comment-support" class="headerlink" title="Comment support."></a>Comment support.</h3><p>NexT has native support for <code>DuoShuo</code> and <code>Disqus</code> comment systems.</p>
+<p>Add the following snippets to your <code>_config.yml</code>:</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">duoshuo:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">shortname:</span> <span class="string">your-duoshuo-shortname</span></span><br></pre></td></tr></table></figure>
+
+<p>OR</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">disqus_shortname:</span> <span class="string">your-disqus-shortname</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Tags-page"><a href="#Tags-page" class="headerlink" title="Tags page."></a>Tags page.</h3><blockquote>
+<p>Add a tags page contains all tags in your site.</p>
+</blockquote>
+<ul>
+<li><p>Create a page named <code>tags</code></p>
+<pre><code>  hexo new page &quot;tags&quot;
+</code></pre>
+</li>
+<li><p>Edit tags page, set page type to <code>tags</code>.</p>
+<pre><code>  title: All tags
+  date: 2014-12-22 12:39:04
+  type: &quot;tags&quot;
+</code></pre>
+</li>
+<li><p>Add <code>tags</code> to theme <code>_config.yml</code>:</p>
+<pre><code>  menu:
+    home: /
+    archives: /archives
+    tags: /tags
+</code></pre>
+</li>
+</ul>
+<h3 id="Categories-page"><a href="#Categories-page" class="headerlink" title="Categories page."></a>Categories page.</h3><blockquote>
+<p>Add a categories page contains all categories in your site.</p>
+</blockquote>
+<ul>
+<li><p>Create a page named <code>categories</code></p>
+<pre><code>  hexo new page &quot;categories&quot;
+</code></pre>
+</li>
+<li><p>Edit categories page, set page type to <code>categories</code>.</p>
+<pre><code>  title: All categories
+  date: 2014-12-22 12:39:04
+  type: &quot;categories&quot;
+</code></pre>
+</li>
+<li><p>Add <code>categories</code> to theme <code>_config.yml</code>:</p>
+<pre><code>  menu:
+    home: /
+    archives: /archives
+    categories: /categories
+</code></pre>
+</li>
+</ul>
+<h3 id="Social-Media"><a href="#Social-Media" class="headerlink" title="Social Media"></a>Social Media</h3><p>NexT can automatically add links to your Social Media accounts:</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">social:</span></span><br><span class="line">  <span class="attr">GitHub:</span> <span class="string">your-github-url</span></span><br><span class="line">  <span class="attr">Twitter:</span> <span class="string">your-twitter-url</span></span><br><span class="line">  <span class="attr">Weibo:</span> <span class="string">your-weibo-url</span></span><br><span class="line">  <span class="attr">DouBan:</span> <span class="string">your-douban-url</span></span><br><span class="line">  <span class="attr">ZhiHu:</span> <span class="string">your-zhihu-url</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Feed-link"><a href="#Feed-link" class="headerlink" title="Feed link."></a>Feed link.</h3><blockquote>
+<p>Show a feed link.</p>
+</blockquote>
+<p>Set <code>rss</code> field in theme’s <code>_config.yml</code>, as the following value:</p>
+<ol>
+<li><p><code>rss: false</code> will totally disable feed link.</p>
+</li>
+<li><p><code>rss:  </code> use sites’ feed link. This is the default option.</p>
+<p> Follow the installation instruction in the plugin’s README. After the configuration is done for this plugin, the feed link is ready too.</p>
+</li>
+<li><p><code>rss: http://your-feed-url</code> set specific feed link.</p>
+</li>
+</ol>
+<h3 id="Up-to-5-code-highlight-themes-built-in"><a href="#Up-to-5-code-highlight-themes-built-in" class="headerlink" title="Up to 5 code highlight themes built-in."></a>Up to 5 code highlight themes built-in.</h3><p>NexT uses <a href="https://github.com/chriskempson/tomorrow-theme">Tomorrow Theme</a> with 5 themes for you to choose from.<br>Next use <code>normal</code> by default. Have a preview about <code>normal</code> and <code>night</code>:</p>
+<p><img src="http://iissnan.com/nexus/next/tomorrow-normal.png" alt="Tomorrow Normal Preview"><br><img src="http://iissnan.com/nexus/next/tomorrow-night.png" alt="Tomorrow Night Preview"></p>
+<p>Head over to <a href="https://github.com/chriskempson/tomorrow-theme">Tomorrow Theme</a> for more details.</p>
+<h2 id="Configuration"><a href="#Configuration" class="headerlink" title="Configuration"></a>Configuration</h2><p>NexT comes with few configurations.</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># Menu configuration.</span></span><br><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/</span></span><br><span class="line">  <span class="attr">archives:</span> <span class="string">/archives</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Favicon</span></span><br><span class="line"><span class="attr">favicon:</span> <span class="string">/favicon.ico</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Avatar (put the image into next/source/images/)</span></span><br><span class="line"><span class="comment"># can be any image format supported by web browsers (JPEG,PNG,GIF,SVG,..)</span></span><br><span class="line"><span class="attr">avatar:</span> <span class="string">/default_avatar.png</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Code highlight theme</span></span><br><span class="line"><span class="comment"># available: normal | night | night eighties | night blue | night bright</span></span><br><span class="line"><span class="attr">highlight_theme:</span> <span class="string">normal</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Fancybox for image gallery</span></span><br><span class="line"><span class="attr">fancybox:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Specify the date when the site was setup</span></span><br><span class="line"><span class="attr">since:</span> <span class="number">2013</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="Browser-support"><a href="#Browser-support" class="headerlink" title="Browser support"></a>Browser support</h2><p><img src="https://img.shields.io/badge/browser-%20chrome%20%7C%20firefox%20%7C%20opera%20%7C%20safari%20%7C%20ie%20%3E%3D%209-lightgrey.svg" alt="browser-image"></p>
+<p><a href="https://www.browserstack.com/"><img src="/.io//browserstack_logo.png" alt="Browser Stack"></a></p>
+<blockquote>
+<p><strong>BrowserStack</strong> is a cloud-based cross-browser testing tool that enables developers to test their websites across various browsers on different operating systems and mobile devices, without requiring users to install virtual machines, devices or emulators.</p>
+</blockquote>
+<h2 id="Contributing"><a href="#Contributing" class="headerlink" title="Contributing"></a>Contributing</h2><p>Contribution is welcome, feel free to open an issue and fork. Waiting for your pull request.</p>
+<!--
+[![hexo-image]][hexo-url]
+[![bower-image]][bower-url]
+[![jquery-image]][jquery-url]
+
+[hexo-image]: http://img.shields.io/badge/Hexo-2.4+-2BAF2B.svg?style=flat-square
+[hexo-url]: http://hexo.io
+[bower-image]: http://img.shields.io/badge/Bower-*-2BAF2B.svg?style=flat-square
+[bower-url]: http://bower.io
+[jquery-image]: https://img.shields.io/badge/jquery-1.9-blue.svg?style=flat-square
+[jquery-url]: http://jquery.com/
+-->
+
+<!--[lic-image]: https://img.shields.io/npm/l/hexo-theme-next.svg-->
+]]></content>
+  </entry>
 </search>

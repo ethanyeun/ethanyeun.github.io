@@ -6,7 +6,7 @@
   <link href="https://ethanyeun.github.io/atom.xml" rel="self"/>
   
   <link href="https://ethanyeun.github.io/"/>
-  <updated>2024-09-19T08:26:03.162Z</updated>
+  <updated>2024-09-19T14:30:48.305Z</updated>
   <id>https://ethanyeun.github.io/</id>
   
   <author>
@@ -15,6 +15,140 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://ethanyeun.github.io/2024/09/19/themes/next/source/lib/jquery_lazyload/README/"/>
+    <id>https://ethanyeun.github.io/2024/09/19/themes/next/source/lib/jquery_lazyload/README/</id>
+    <published>2024-09-19T14:30:48.305Z</published>
+    <updated>2024-09-19T14:30:48.305Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Lazy-Load-Plugin-for-jQuery&quot;&gt;&lt;a href=&quot;#Lazy-Load-Plugin-for-jQuery&quot; class=&quot;headerlink&quot; title=&quot;Lazy Load Plugin for jQuery&quot;&gt;&lt;/a&gt;Lazy Load Plugin for jQuery&lt;/h1&gt;&lt;p&gt;Lazy Load delays loading of images in long web pages. Images outside of viewport wont be loaded before user scrolls to them. This is opposite of image preloading.&lt;/p&gt;
+&lt;p&gt;Using Lazy Load on long web pages containing many large images makes the page load faster. Browser will be in ready state after loading visible images. In some cases it can also help to reduce server load.&lt;/p&gt;
+&lt;p&gt;Lazy Load is inspired by &lt;a href=&quot;http://developer.yahoo.com/yui/imageloader/&quot;&gt;YUI ImageLoader&lt;/a&gt; Utility by Matt Mlinac.&lt;/p&gt;
+&lt;h2 id=&quot;How-to-Use&quot;&gt;&lt;a href=&quot;#How-to-Use&quot; class=&quot;headerlink&quot; title=&quot;How to Use?&quot;&gt;&lt;/a&gt;How to Use?&lt;/h2&gt;&lt;p&gt;Lazy Load depends on jQuery. Include them both in end of your HTML code:&lt;/p&gt;
+&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&amp;quot;jquery.js&amp;quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&amp;quot;jquery.lazyload.js&amp;quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;You must alter your HTML code. URL of the real image must be put into data-original attribute. It is good idea to give Lazy Loaded image a specific class. This way you can easily control which images plugin is binded to. Note that you should have width and height attributes in your image tag.&lt;/p&gt;
+&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&amp;quot;lazy&amp;quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;data-original&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&amp;quot;img/example.jpg&amp;quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;width&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&amp;quot;640&amp;quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;height&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&amp;quot;480&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;then in your code do:&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://ethanyeun.github.io/2024/09/19/themes/next/source/lib/jquery_lazyload/CONTRIBUTING/"/>
+    <id>https://ethanyeun.github.io/2024/09/19/themes/next/source/lib/jquery_lazyload/CONTRIBUTING/</id>
+    <published>2024-09-19T14:30:48.304Z</published>
+    <updated>2024-09-19T14:30:48.304Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Contributing-to-Lazy-Load&quot;&gt;&lt;a href=&quot;#Contributing-to-Lazy-Load&quot; class=&quot;headerlink&quot; title=&quot;Contributing to Lazy Load&quot;&gt;&lt;/a&gt;Contributing to Lazy Load&lt;/h1&gt;&lt;h2 id=&quot;Only-one-feature-or-change-per-pull-request&quot;&gt;&lt;a href=&quot;#Only-one-feature-or-change-per-pull-request&quot; class=&quot;headerlink&quot; title=&quot;Only one feature or change per pull request&quot;&gt;&lt;/a&gt;Only one feature or change per pull request&lt;/h2&gt;&lt;p&gt;Make pull requests only one feature or change at the time. For example you have fixed a bug. You also have optimized some code. Optimization is not related to a bug. These should be submitted as separate pull requests. This way I can easily choose what to include. It is also easier to understand the code changes. Commit messages should be descriptive and full sentences.&lt;/p&gt;
+&lt;p&gt;Do not commit minified versions. Do not touch the version number. Make the pull requests against &lt;a href=&quot;https://github.com/tuupola/jquery_lazyload/commits/1.9.x&quot;&gt;1.9.x branch&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Write-meaningful-commit-messages&quot;&gt;&lt;a href=&quot;#Write-meaningful-commit-messages&quot; class=&quot;headerlink&quot; title=&quot;Write meaningful commit messages&quot;&gt;&lt;/a&gt;Write meaningful commit messages&lt;/h2&gt;&lt;p&gt;Proper commit message is full sentence. It starts with capital letter but does not end with period. Headlines do not end with period. The GitHub default &lt;code&gt;Update filename.js&lt;/code&gt; is not enough. When needed include also longer explanation what the commit does.&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Capitalized, short (50 chars or less) summary&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;More detailed explanatory text, if necessary.  Wrap it to about 72&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;characters or so.  In some contexts, the first line is treated as the&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;subject of an email and the rest of the text as the body.  The blank&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;line separating the summary from the body is critical (unless you omit&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;the body entirely); tools like rebase can get confused if you run the&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;two together.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;When in doubt see Tim Pope’s blogpost &lt;a href=&quot;http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html&quot;&gt;A Note About Git Commit Messages&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Follow-the-existing-coding-standards&quot;&gt;&lt;a href=&quot;#Follow-the-existing-coding-standards&quot; class=&quot;headerlink&quot; title=&quot;Follow the existing coding standards&quot;&gt;&lt;/a&gt;Follow the existing coding standards&lt;/h2&gt;&lt;p&gt;When contributing to open source project it is polite to follow the original authors coding standars. They might be different than yours. It is not a holy war. Just follow then original.&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://ethanyeun.github.io/2024/09/19/themes/next/source/lib/fastclick/README/"/>
+    <id>https://ethanyeun.github.io/2024/09/19/themes/next/source/lib/fastclick/README/</id>
+    <published>2024-09-19T14:30:48.282Z</published>
+    <updated>2024-09-19T14:30:48.282Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;FastClick&quot;&gt;&lt;a href=&quot;#FastClick&quot; class=&quot;headerlink&quot; title=&quot;FastClick&quot;&gt;&lt;/a&gt;FastClick&lt;/h1&gt;&lt;p&gt;FastClick is a simple, easy-to-use library for eliminating the 300ms delay between a physical tap and the firing of a &lt;code&gt;click&lt;/code&gt; event on mobile browsers. The aim is to make your application feel less laggy and more responsive while avoiding any interference with your current logic.&lt;/p&gt;
+&lt;p&gt;FastClick is developed by &lt;a href=&quot;http://labs.ft.com/&quot;&gt;FT Labs&lt;/a&gt;, part of the Financial Times.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://maxime.sh/2013/02/supprimer-le-lag-des-clics-sur-mobile-avec-fastclick/&quot;&gt;Explication en français&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/ja/docs/Mozilla/Firefox_OS/Apps/Tips_and_techniques#Make_events_immediate&quot;&gt;日本語で説明&lt;/a&gt;。&lt;/p&gt;
+&lt;h2 id=&quot;Why-does-the-delay-exist&quot;&gt;&lt;a href=&quot;#Why-does-the-delay-exist&quot; class=&quot;headerlink&quot; title=&quot;Why does the delay exist?&quot;&gt;&lt;/a&gt;Why does the delay exist?&lt;/h2&gt;&lt;p&gt;According to &lt;a href=&quot;https://developers.google.com/mobile/articles/fast_buttons&quot;&gt;Google&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;…mobile browsers will wait approximately 300ms from the time that you tap the button to fire the click event. The reason for this is that the browser is waiting to see if you are actually performing a double tap.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Compatibility&quot;&gt;&lt;a href=&quot;#Compatibility&quot; class=&quot;headerlink&quot; title=&quot;Compatibility&quot;&gt;&lt;/a&gt;Compatibility&lt;/h2&gt;&lt;p&gt;The library has been deployed as part of the &lt;a href=&quot;http://app.ft.com/&quot;&gt;FT Web App&lt;/a&gt; and is tried and tested on the following mobile browsers:&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://ethanyeun.github.io/2024/09/19/themes/next/README.cn/"/>
+    <id>https://ethanyeun.github.io/2024/09/19/themes/next/README.cn/</id>
+    <published>2024-09-19T14:30:48.123Z</published>
+    <updated>2024-09-19T14:30:48.123Z</updated>
+    
+    
+    <summary type="html">&lt;h1 align=&quot;center&quot;&gt;本项目已停止维护。:warning:&lt;/h1&gt;
+&lt;h2 align=&quot;center&quot;&gt;社区维护的版本请移步这里：&lt;a href=&quot;https://github.com/theme-next/hexo-theme-next&quot;&gt;NexT v6 and v7 :triangular_flag_on_post:&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h1 align=&quot;center&quot;&gt;NexT&lt;/h1&gt;
+
+&lt;p align=&quot;center&quot;&gt;NexT 是一个高质量并且优雅的&lt;a href=&quot;http://hexo.io&quot;&gt;Hexo&lt;/a&gt; 主题。这是精心制作做出来的 hexo 主题。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://gitter.im/iissnan/hexo-theme-next?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge&quot;&gt;&lt;img src=&quot;https://badges.gitter.im/Join%20Chat.svg&quot; alt=&quot;Join the chat at https://gitter.im/iissnan/hexo-theme-next&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/iissnan/hexo-theme-next/commits/master&quot;&gt;&lt;img src=&quot;https://img.shields.io/maintenance/yes/2017.svg&quot; alt=&quot;mnt-image&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://travis-ci.org/iissnan/hexo-theme-next?branch=master&quot; title=&quot;Travis CI&quot;&gt;&lt;img src=&quot;https://travis-ci.org/iissnan/hexo-theme-next.svg?branch=master&quot; alt=&quot;travis-image&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/iissnan/hexo-theme-next/releases&quot;&gt;&lt;img src=&quot;https://img.shields.io/github/release/iissnan/hexo-theme-next.svg&quot; alt=&quot;rel-image&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://hexo.io/&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/hexo-%3E%3D%203.0-blue.svg&quot; alt=&quot;hexo-image&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;LICENSE&quot;&gt;&lt;img src=&quot;https://img.shields.io/dub/l/vibe-d.svg&quot; alt=&quot;lic-image&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://theme-next.iissnan.com&quot; target=&quot;_blank&quot;&gt;NexT 使用文档&lt;/a&gt; |  &lt;a href=&quot;README.md&quot;&gt;English Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;实时预览-Live-Preview&quot;&gt;&lt;a href=&quot;#实时预览-Live-Preview&quot; class=&quot;headerlink&quot; title=&quot;实时预览 Live Preview&quot;&gt;&lt;/a&gt;实时预览 Live Preview&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;:heart_decoration: Muse 方案: &lt;a href=&quot;https://leaferx.online/&quot;&gt;LEAFERx&lt;/a&gt; | &lt;a href=&quot;https://notes.wanghao.work/&quot;&gt;XiaMo&lt;/a&gt; | &lt;a href=&quot;https://oawan.me/&quot;&gt;OAwan&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;:six_pointed_star: Mist 方案: &lt;a href=&quot;https://blog.zzbd.org/&quot;&gt;Jeff&lt;/a&gt; | &lt;a href=&quot;http://uchuhimo.me/&quot;&gt;uchuhimo&lt;/a&gt; | &lt;a href=&quot;http://www.ixirong.com/&quot;&gt;xirong&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;:pisces: Pisces 方案: &lt;a href=&quot;http://notes.iissnan.com/&quot;&gt;Vi&lt;/a&gt; | &lt;a href=&quot;https://acris.me/&quot;&gt;Acris&lt;/a&gt; | &lt;a href=&quot;https://rainylog.com/&quot;&gt;Rainy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;:gemini: Gemini 方案: &lt;a href=&quot;https://almostover.ru/&quot;&gt;Ivan.Nginx&lt;/a&gt; | &lt;a href=&quot;https://raincal.com/&quot;&gt;Raincal&lt;/a&gt; | &lt;a href=&quot;https://dandyxu.me/&quot;&gt;Dandy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;更多 NexT 例子点击 &lt;a href=&quot;https://github.com/iissnan/hexo-theme-next/issues/119&quot;&gt;这里&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;安装-Installation&quot;&gt;&lt;a href=&quot;#安装-Installation&quot; class=&quot;headerlink&quot; title=&quot;安装 Installation&quot;&gt;&lt;/a&gt;安装 Installation&lt;/h2&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://ethanyeun.github.io/2024/09/19/themes/next/README/"/>
+    <id>https://ethanyeun.github.io/2024/09/19/themes/next/README/</id>
+    <published>2024-09-19T14:30:48.123Z</published>
+    <updated>2024-09-19T14:30:48.123Z</updated>
+    
+    
+    <summary type="html">&lt;h1 align=&quot;center&quot;&gt;This repository is no longer maintained! :warning:&lt;/h1&gt;
+&lt;h2 align=&quot;center&quot;&gt;The community-maintained version is here: &lt;a href=&quot;https://github.com/theme-next/hexo-theme-next&quot;&gt;NexT v6 and v7 :triangular_flag_on_post:&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h1 align=&quot;center&quot;&gt;NexT&lt;/h1&gt;
+
+&lt;p align=&quot;center&quot;&gt;NexT is a high quality elegant &lt;a href=&quot;http://hexo.io&quot;&gt;Hexo&lt;/a&gt; theme. It is crafted from scratch, with love.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://gitter.im/iissnan/hexo-theme-next?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge&quot;&gt;&lt;img src=&quot;https://badges.gitter.im/Join%20Chat.svg&quot; alt=&quot;gitter-image&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/theme-next/hexo-theme-next&quot;&gt;&lt;img src=&quot;https://img.shields.io/maintenance/yes/2017.svg&quot; alt=&quot;mnt-image&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://travis-ci.org/iissnan/hexo-theme-next?branch=master&quot; title=&quot;Travis CI&quot;&gt;&lt;img src=&quot;https://travis-ci.org/iissnan/hexo-theme-next.svg?branch=master&quot; alt=&quot;travis-image&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/iissnan/hexo-theme-next/releases&quot;&gt;&lt;img src=&quot;https://img.shields.io/github/release/iissnan/hexo-theme-next.svg&quot; alt=&quot;rel-image&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://hexo.io/&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/hexo-%3E%3D%203.0-blue.svg&quot; alt=&quot;hexo-image&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;LICENSE&quot;&gt;&lt;img src=&quot;https://img.shields.io/dub/l/vibe-d.svg&quot; alt=&quot;lic-image&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;README.cn.md&quot;&gt;Chinese Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;Live-Preview&quot;&gt;&lt;a href=&quot;#Live-Preview&quot; class=&quot;headerlink&quot; title=&quot;Live Preview&quot;&gt;&lt;/a&gt;Live Preview&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;:heart_decoration: Muse scheme: &lt;a href=&quot;https://leaferx.online/&quot;&gt;LEAFERx&lt;/a&gt; | &lt;a href=&quot;https://notes.wanghao.work/&quot;&gt;XiaMo&lt;/a&gt; | &lt;a href=&quot;https://oawan.me/&quot;&gt;OAwan&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;:six_pointed_star: Mist scheme: &lt;a href=&quot;https://blog.zzbd.org/&quot;&gt;Jeff&lt;/a&gt; | &lt;a href=&quot;http://uchuhimo.me/&quot;&gt;uchuhimo&lt;/a&gt; | &lt;a href=&quot;http://www.ixirong.com/&quot;&gt;xirong&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;:pisces: Pisces scheme: &lt;a href=&quot;http://notes.iissnan.com/&quot;&gt;Vi&lt;/a&gt; | &lt;a href=&quot;https://acris.me/&quot;&gt;Acris&lt;/a&gt; | &lt;a href=&quot;https://rainylog.com/&quot;&gt;Rainy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;:gemini: Gemini scheme: &lt;a href=&quot;https://almostover.ru/&quot;&gt;Ivan.Nginx&lt;/a&gt; | &lt;a href=&quot;https://raincal.com/&quot;&gt;Raincal&lt;/a&gt; | &lt;a href=&quot;https://dandyxu.me/&quot;&gt;Dandy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;More NexT examples &lt;a href=&quot;https://github.com/iissnan/hexo-theme-next/issues/119&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Installation&quot;&gt;&lt;a href=&quot;#Installation&quot; class=&quot;headerlink&quot; title=&quot;Installation&quot;&gt;&lt;/a&gt;Installation&lt;/h2&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Prometheus</title>
